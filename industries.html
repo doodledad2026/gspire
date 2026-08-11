@@ -502,8 +502,9 @@
     display:flex; flex-wrap:wrap; gap:12px;
   }
   .industry-tag{
-    border:1px solid var(--line); padding:12px 20px; font-size:0.9rem; border-radius:var(--radius-sm);
+    display:inline-block; border:1px solid var(--line); padding:12px 20px; font-size:0.9rem; border-radius:var(--radius-sm);
     font-family:'IBM Plex Mono', monospace; color:var(--ink); background:var(--parchment-2);
+    text-decoration:none; cursor:pointer;
     transition:transform 0.3s var(--ease), box-shadow 0.3s var(--ease), background 0.3s ease, border-color 0.3s ease;
   }
   .industry-tag:hover{
@@ -693,24 +694,27 @@
   <div class="wrap">
     <span class="breadcrumb"><a href="index.html">Home</a> / Who We Serve</span>
     <h1>Built for businesses of every size, wherever they're based.</h1>
-    <p>Real Estate, HVAC, Insurance, Financial Services, Law Firms, Business Brokers, Auto Services, Retail, Architecture, Manufacturing, and Professional Services. Here's what we actually build for each.</p>
+    <p>Real Estate, HVAC, Insurance, Financial Services, Law Firms, Business Brokers, Auto Services, Retail, Architecture, Manufacturing, Landscaping, Construction, Salons, and Professional Services. Click any category below to jump straight to it.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <div class="industries-grid reveal-stagger" style="margin-bottom:56px;">
-      <span class="industry-tag">Real Estate</span>
-      <span class="industry-tag">HVAC &amp; Home Services</span>
-      <span class="industry-tag">Insurance Agencies</span>
-      <span class="industry-tag">Credit Unions &amp; Financial Services</span>
-      <span class="industry-tag">Law Firms</span>
-      <span class="industry-tag">Business Brokers</span>
-      <span class="industry-tag">Auto Services</span>
-      <span class="industry-tag">Retail &amp; Local Shops</span>
-      <span class="industry-tag">Architecture &amp; Design</span>
-      <span class="industry-tag">Manufacturing &amp; Distribution</span>
-      <span class="industry-tag">Professional Services</span>
+      <a class="industry-tag" href="#real-estate">Real Estate</a>
+      <a class="industry-tag" href="#hvac">HVAC &amp; Home Services</a>
+      <a class="industry-tag" href="#insurance">Insurance Agencies</a>
+      <a class="industry-tag" href="#financial-services">Credit Unions &amp; Financial Services</a>
+      <a class="industry-tag" href="#law-firms">Law Firms</a>
+      <a class="industry-tag" href="#business-brokers">Business Brokers</a>
+      <a class="industry-tag" href="#auto-services">Auto Services</a>
+      <a class="industry-tag" href="#retail">Retail &amp; Local Shops</a>
+      <a class="industry-tag" href="#architecture">Architecture &amp; Design</a>
+      <a class="industry-tag" href="#manufacturing">Manufacturing &amp; Distribution</a>
+      <a class="industry-tag" href="#landscaping">Landscaping</a>
+      <a class="industry-tag" href="#construction">Construction</a>
+      <a class="industry-tag" href="#salons">Salons &amp; Personal Care</a>
+      <a class="industry-tag" href="#professional-services">Professional Services</a>
     </div>
 
     <div class="section-head reveal">
@@ -719,7 +723,7 @@
       <p>Every business is different, but these are the problems, approaches, and typical outcomes that show up most often in each industry. Illustrative scenarios based on the kind of work described, not claims about a specific past client.</p>
     </div>
     <div class="services-grid reveal-stagger" style="grid-template-columns:repeat(2,1fr); gap:20px;">
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="real-estate">
       <h3 style="margin-bottom:14px;">Real Estate</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A lead texts at 9pm about a listing and doesn't hear back until the next afternoon, by then they've toured three other houses</li><li style='margin-bottom:6px;'>Buyers go quiet after the third showing because nobody followed up at the right moment</li><li style='margin-bottom:6px;'>Weekend inquiries pile up until Monday, when half of them have already found another agent</li></ul>
@@ -731,7 +735,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically the difference between a lead who books a showing and one who goes cold by the next morning.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="hvac">
       <h3 style="margin-bottom:14px;">HVAC &amp; Home Services</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A no-heat call at 10pm goes to voicemail, and the homeowner calls the next name on the list</li><li style='margin-bottom:6px;'>A quote gets emailed and never followed up on, so it just sits there</li><li style='margin-bottom:6px;'>Techs spend half their morning confirming appointments instead of on the truck</li></ul>
@@ -743,7 +747,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically recovers after-hours calls that would otherwise go to whichever shop answers first.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="insurance">
       <h3 style="margin-bottom:14px;">Insurance Agencies</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>The same renewal questions get asked over and over, eating time that should go to actual client relationships</li><li style='margin-bottom:6px;'>A policyholder can't reach anyone after hours and starts shopping around</li><li style='margin-bottom:6px;'>A claims status update gets missed, and the client hears about it from a letter instead of from you</li></ul>
@@ -755,7 +759,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically frees several hours a week back into actual client conversations instead of repetitive admin.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="financial-services">
       <h3 style="margin-bottom:14px;">Credit Unions &amp; Financial Services</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>New member onboarding stalls waiting on a document nobody remembered to request</li><li style='margin-bottom:6px;'>Loan officers spend their mornings playing calendar tag instead of meeting with members</li><li style='margin-bottom:6px;'>A maturity date slips past because nobody flagged it in time</li></ul>
@@ -767,7 +771,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically shortens the time from first contact to a fully onboarded member.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="law-firms">
       <h3 style="margin-bottom:14px;">Law Firms</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A prospective client calls, doesn't reach anyone, and hires the firm that answered</li><li style='margin-bottom:6px;'>The first meeting starts with "so tell me about your situation" instead of already knowing the basics</li><li style='margin-bottom:6px;'>Case status updates only happen when a client calls to ask, which quietly erodes trust</li></ul>
@@ -779,7 +783,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically means the first client meeting starts already informed, not spent gathering basics.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="business-brokers">
       <h3 style="margin-bottom:14px;">Business Brokers</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>Half the buyer inquiries are tire-kickers, but sorting them out eats hours every week</li><li style='margin-bottom:6px;'>Deal documents pile up faster than anyone can summarize them</li><li style='margin-bottom:6px;'>A multi-party close stalls because nobody remembered to update one side on where things stand</li></ul>
@@ -791,7 +795,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically keeps tire-kickers out of the pipeline, so deal time goes to buyers who are actually ready.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="auto-services">
       <h3 style="margin-bottom:14px;">Auto Services</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A customer calls twice just to ask "is it done yet" because nobody sent an update</li><li style='margin-bottom:6px;'>After-hours breakdowns go to whichever shop actually picks up the phone</li><li style='margin-bottom:6px;'>A completed job doesn't get a review request until it's too late to matter</li></ul>
@@ -803,7 +807,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically cuts down the "is it done yet" calls that pull staff off the shop floor.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="retail">
       <h3 style="margin-bottom:14px;">Retail &amp; Local Shops</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A first-time customer never comes back because there was no easy way to remind them</li><li style='margin-bottom:6px;'>Phone-in specialty orders get missed during a busy shift</li><li style='margin-bottom:6px;'>Nobody asks for a review at the moment the customer is happiest</li></ul>
@@ -815,7 +819,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically increases repeat visits without adding staff hours at the counter.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="architecture">
       <h3 style="margin-bottom:14px;">Architecture &amp; Design</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>Clients call "just checking in" because they haven't heard anything in three weeks</li><li style='margin-bottom:6px;'>Permit and code research eats hours that should go to actual design work</li><li style='margin-bottom:6px;'>A project inquiry sits in an inbox for days before anyone scopes it</li></ul>
@@ -827,7 +831,7 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically cuts down the "just checking in" calls and emails on long-running projects.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="manufacturing">
       <h3 style="margin-bottom:14px;">Manufacturing &amp; Distribution</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A quote request sits in an email thread for days before anyone responds</li><li style='margin-bottom:6px;'>Dealers call in because they can't get a straight answer on order status</li><li style='margin-bottom:6px;'>Production scheduling depends on someone remembering to check a shared spreadsheet</li></ul>
@@ -839,7 +843,41 @@
       <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically shortens the time between a quote request and a confirmed order.</p>
     </div>
     
-    <div class="service-card" style="text-align:left;">
+    <div class="service-card" style="text-align:left;" id="landscaping">
+      <h3 style="margin-bottom:14px;">Landscaping</h3>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
+      <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A quote gets promised "by end of week" and takes three weeks because it's stuck behind fieldwork</li><li style='margin-bottom:6px;'>Crews show up to the wrong address or the wrong day because scheduling lives in someone's head</li><li style='margin-bottom:6px;'>A rainy-week reschedule turns into a dozen individual phone calls</li></ul>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Approach</span>
+      <p style="margin-bottom:14px; color:var(--slate); font-size:0.92rem;">Automated quote follow-up and route-aware scheduling that updates customers the moment a job shifts.</p>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">What Changes</span>
+      <ul style="padding-left:20px; margin-bottom:14px; color:var(--charcoal); font-size:0.92rem;"><li style='margin-bottom:8px;'>Automated quote requests and follow-up sequences</li><li style='margin-bottom:8px;'>Crew scheduling and route confirmation texts</li><li style='margin-bottom:8px;'>Weather-driven reschedule notifications sent to the whole day's list at once</li><li style='margin-bottom:8px;'>Post-job review requests timed to when the work actually finishes</li></ul>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">Typical Impact</span>
+      <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically cuts the phone tag around weather reschedules from a dozen calls down to one automated message.</p>
+    </div>
+    
+        <div class="service-card" style="text-align:left;" id="construction">
+      <h3 style="margin-bottom:14px;">Construction</h3>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
+      <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A subcontractor or supplier update gets buried in a group text and someone finds out too late</li><li style='margin-bottom:6px;'>Permit and inspection milestones get tracked on a whiteboard that only one person actually reads</li><li style='margin-bottom:6px;'>A homeowner or client calls just to ask where the project stands</li></ul>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Approach</span>
+      <p style="margin-bottom:14px; color:var(--slate); font-size:0.92rem;">Automated milestone updates and document handling that keep every party working from the same information.</p>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">What Changes</span>
+      <ul style="padding-left:20px; margin-bottom:14px; color:var(--charcoal); font-size:0.92rem;"><li style='margin-bottom:8px;'>Automated client and subcontractor status updates by project milestone</li><li style='margin-bottom:8px;'>Permit and inspection tracking reminders</li><li style='margin-bottom:8px;'>Bid and estimate document summarization</li><li style='margin-bottom:8px;'>Change-order and document routing so approvals do not stall in someone's inbox</li></ul>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">Typical Impact</span>
+      <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically replaces the "just checking in" calls with status updates people already have before they ask.</p>
+    </div>
+        <div class="service-card" style="text-align:left;" id="salons">
+      <h3 style="margin-bottom:14px;">Salons &amp; Personal Care</h3>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
+      <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>A client no-shows without warning and the slot just sits empty</li><li style='margin-bottom:6px;'>Rebooking depends on someone remembering to text regulars before they drift to another salon</li><li style='margin-bottom:6px;'>A product recommendation gets mentioned once in the chair and forgotten by checkout</li></ul>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Approach</span>
+      <p style="margin-bottom:14px; color:var(--slate); font-size:0.92rem;">Automated booking reminders and rebooking nudges timed to each client's usual cycle, so chairs stay full without extra front-desk work.</p>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">What Changes</span>
+      <ul style="padding-left:20px; margin-bottom:14px; color:var(--charcoal); font-size:0.92rem;"><li style='margin-bottom:8px;'>Automated appointment reminders and no-show follow-up</li><li style='margin-bottom:8px;'>Rebooking prompts timed to each client's typical visit cycle</li><li style='margin-bottom:8px;'>Automated review requests after every appointment</li><li style='margin-bottom:8px;'>Simple waitlist notifications when an earlier slot opens up</li></ul>
+      <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">Typical Impact</span>
+      <p style="margin-bottom:0; color:var(--slate); font-size:0.92rem; font-style:italic;">Typically fills last-minute cancellations and keeps regulars on a steady rebooking cycle without anyone chasing it manually.</p>
+    </div>
+        <div class="service-card" style="text-align:left;" id="professional-services">
       <h3 style="margin-bottom:14px;">Professional Services (General)</h3>
       <span class="mono" style="color:var(--brass); display:block; margin:0 0 6px;">The Problems</span>
       <ul style="padding-left:20px; margin-bottom:14px; color:var(--slate); font-size:0.92rem;"><li style='margin-bottom:6px;'>Client intake happens differently every time, depending on who picks up the phone</li><li style='margin-bottom:6px;'>Meetings get missed because a confirmation never went out</li><li style='margin-bottom:6px;'>The same follow-up email gets written from scratch every single time</li></ul>
@@ -855,7 +893,7 @@
 </section>
 
 <section class="photo-break reveal">
-  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260810_114235_e6258f32-196d-468b-a2f2-ab455da1767e.png" alt="AI consultant reviewing an automation workflow with a client" loading="lazy">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260811_153935_b48ef4b0-f38d-4c25-9344-0d6809f7ff16.png" alt="Small-town Main Street with local independent storefronts" loading="lazy">
   <div class="photo-break-content">
     <span class="mono">Same Person, Every Industry</span>
     <p>"Real estate, HVAC, law, insurance, whatever it is: the questions I ask on that first call are the same. Where does your time actually go, and what happens the moment a lead goes cold?"</p>
