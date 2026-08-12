@@ -577,6 +577,12 @@
   }
   .background h2{font-size:clamp(1.5rem, 2.6vw, 2rem); margin-bottom:18px;}
   .background p{color:var(--slate); font-size:1rem; margin-bottom:16px; max-width:52ch;}
+  .platform-chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+  .platform-chip{
+    display:inline-flex; align-items:center; padding:8px 14px;
+    background:var(--parchment); border:1px solid var(--line); border-radius:999px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.76rem; color:var(--charcoal);
+  }
   .background-stats{
     display:grid; grid-template-columns:1fr 1fr; gap:20px;
   }
@@ -787,6 +793,21 @@
         <p>A pipeline that tracks every deal automatically, nudges follow-up before it's too late, and shows you exactly where revenue is stuck.</p>
         <div class="tools">No deal falls through the cracks</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="photo-break reveal" style="min-height:320px;">
+  <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_235154_576a8655-367c-415a-ace1-39dd1213ba01.png" alt="Hands mapping out a workflow diagram on a whiteboard" loading="lazy">
+  <div class="photo-break-content">
+    <span class="mono">Built Around Your Workflow</span>
+    <p>Every one of these starts the same way: mapping how your business actually operates before a single line of automation gets built.</p>
+  </div>
+</section>
+
+<section style="border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="services-grid reveal-stagger">
       <div class="service-card">
         <span class="num">07</span>
         <h3>Marketing &amp; Follow-Up Campaigns</h3>
@@ -898,10 +919,16 @@
 
 <section class="background" style="border-top:1px solid var(--line);">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="mono">How A Build Actually Happens</span>
-      <h2>Every project follows the same five steps.</h2>
-      <p>No surprises, no disruption to how you run today. See the full breakdown of our approach and methodology.</p>
+    <div class="background-grid reveal" style="margin-bottom:36px;">
+      <div>
+        <span class="background-badge">How A Build Actually Happens</span>
+        <h2>Every project follows the same five steps.</h2>
+        <p>No surprises, no disruption to how you run today. See the full breakdown of our approach and methodology.</p>
+        <a href="approach.html" class="btn btn-ghost" style="border-color:var(--brass); color:var(--ink);">Read our full approach</a>
+      </div>
+      <div class="portrait-frame">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_235155_5d1daf06-9be0-41fa-b348-4abbbb33ffbb.png" alt="Focused person building and testing a system on a laptop" loading="lazy">
+      </div>
     </div>
     <div class="process-steps reveal-stagger" style="color:var(--charcoal);">
       <div class="process-step" style="border-top-color:var(--brass);">
@@ -930,16 +957,33 @@
         <p style="color:var(--slate);">A clean handover, or ongoing monitoring as an add-on. Your call, no lock-in either way.</p>
       </div>
     </div>
-    <div style="text-align:center; margin-top:24px;"><a href="approach.html" class="btn btn-ghost" style="border-color:var(--brass); color:var(--ink);">Read our full approach</a></div>
   </div>
 </section>
 
 <section class="background" style="border-top:1px solid var(--line);">
-  <div class="wrap" style="max-width:800px;">
-    <div class="section-head reveal">
-      <span class="mono">How We Build It</span>
-      <h2>Deep experience across a wide array of platforms, connected to what you already run.</h2>
-      <p>Most businesses already have some tools in place: QuickBooks, Salesforce, HubSpot, ServiceTitan, Housecall Pro, Clio, Mailchimp, Square, Google Workspace, Microsoft 365, or something similar. We've built automation across dozens of platforms and AI systems, so we don't rip out what you're running, we connect to it. And if a piece of your stack needs an upgrade to get the job done right, that breadth of experience means we know exactly what to recommend and how to set it up. Either way, everything runs on accounts you own, not ours.</p>
+  <div class="wrap">
+    <div class="background-grid reveal">
+      <div>
+        <span class="background-badge">How We Build It</span>
+        <h2>Deep experience across a wide array of platforms, connected to what you already run.</h2>
+        <p>Most businesses already have some tools in place. We connect to what you're already running instead of ripping it out, and if a piece of your stack needs an upgrade, that same experience tells us exactly what to recommend. Either way, everything runs on accounts you own, not ours.</p>
+        <div class="platform-chips">
+          <span class="platform-chip">QuickBooks</span>
+          <span class="platform-chip">Salesforce</span>
+          <span class="platform-chip">HubSpot</span>
+          <span class="platform-chip">ServiceTitan</span>
+          <span class="platform-chip">Housecall Pro</span>
+          <span class="platform-chip">Clio</span>
+          <span class="platform-chip">Mailchimp</span>
+          <span class="platform-chip">Square</span>
+          <span class="platform-chip">Google Workspace</span>
+          <span class="platform-chip">Microsoft 365</span>
+          <span class="platform-chip">+ many more</span>
+        </div>
+      </div>
+      <div class="portrait-frame">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_235155_99f33134-01fe-48e1-8f37-52d8277b2042.png" alt="Laptop, tablet, and phone synced together on a desk" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
