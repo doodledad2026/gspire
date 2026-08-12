@@ -346,6 +346,9 @@
     display:grid; grid-template-columns:repeat(2, 1fr); gap:20px;
   }
   @media (max-width:760px){ .services-grid{grid-template-columns:1fr;} }
+  .services-grid-3{ grid-template-columns:repeat(3, 1fr); }
+  @media (max-width:900px){ .services-grid-3{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .services-grid-3{grid-template-columns:1fr;} }
   .service-card{
     background:var(--parchment); padding:36px 32px; border:1px solid var(--line);
     border-radius:var(--radius-md); box-shadow:var(--shadow-sm);
@@ -778,7 +781,7 @@
       <h2>The work you're not automating is quietly capping your growth.</h2>
       <p>This isn't a hard sell on technology for its own sake. It's the math every growing business eventually has to run: what manual, repetitive work is actually costing you every month you don't fix it.</p>
     </div>
-    <div class="services-grid reveal-stagger" style="grid-template-columns:repeat(3,1fr);">
+    <div class="services-grid services-grid-3 reveal-stagger">
       <div class="service-card">
         <span class="num">01</span>
         <h3>Every missed call is a closed door</h3>
@@ -933,7 +936,7 @@
       <h2>Two ways to work with us.</h2>
       <p>Every engagement starts the same way, with a complete system, tested and delivered. From there, it's your call how hands-on you want to stay.</p>
     </div>
-    <div class="services-grid reveal-stagger" style="grid-template-columns:repeat(2,1fr); gap:20px;">
+    <div class="services-grid reveal-stagger">
       <div class="service-card" style="text-align:left;">
         <h3 style="margin-bottom:10px;">Build &amp; Handover</h3>
         <p style="color:var(--slate); font-size:0.94rem; margin-bottom:0;">We deliver a complete system on accounts you own, fully documented. Your team drives it going forward, no strings attached.</p>
@@ -1178,7 +1181,7 @@
       <h2>What business owners ask before reaching out.</h2>
       <p>Straight answers, no sales spin.</p>
     </div>
-    <div class="services-grid reveal-stagger" style="grid-template-columns:repeat(2,1fr); gap:20px;">
+    <div class="services-grid reveal-stagger">
       <div class="service-card" style="text-align:left;">
         <h3 style="margin-bottom:8px;">What does this cost?</h3>
         <p style="color:var(--slate); font-size:0.92rem;">Every build is scoped to your business after you reach out, so pricing is never one-size-fits-all. As a rule of thumb, most projects pay for themselves within 2 to 3 months from time saved or leads recovered alone.</p>
