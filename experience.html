@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAwFBMVEWbaR3ZoBNxFAC8pyrGnjB0aSTWayHBmC2yOwCxhx+yiR//AP//qlX//3////8/AAB/f39//wB//3+sfRuqVVWq/wDDmzEAAAC5ky/CmzKwiSa2kyr/fwD//wC0jCV/fwCqqgCvhyOziiKxiyiziBy5fziseg67lCvLozaziiO7lCv/AACzhxi5kiu4kimqqlW0iiO4kiqyhx2xiCeqVQDCmS6YaAa1kiWyhx7Kly6ZmTOsfhX/f3/CmjCxhx7BnDAUTdfGAAAAQHRSTlMJFQMP1AYEdQSrwAEDAgEEAgICQQMDlQD4+i8uAgGQAgNKseksBRCR/m5SARfNbQPGrVAUA7IKDmwJBSYCUY8x6JqrdgAAA41JREFUeNqVloly2zgMhuWrSZq22+5uC5IySUmmKMk6bMn3kfb932oBSm7q2HGynskMQ/PjD4A47MH//HhXdz80xWmp3wFIWMwFLN+voGHDQnf1OFhbz+ZvAWMQaQWf3FqU+m2FAKo0gSNqmLuIq+yARt4EZpCkZYC+SLNKOVcW8iuAfpZ+hFXKNrj4BFO2YgJGkOtzII//UMphwRgemwFsMvFXtoVvFOlY/gY0rY05CWvwGeMVxAB9gC8uXIseWhhrB+BFsA7VfIvRcZ8Yppyh17F7ExlQ2Eykwp5zDxV2QkXR1sgx6nwOcjyYpIzX7iboAqRFFs2TwQAVvGkdKdN+6VetQo1A6bVZ0dddTI9GlfV04wlWtUG6N/4PLsQa8sGQoxMC/sV9k3USZBBUzPf8iS/JaamzIR5T6y/g43nGQ9hDL86YKGyXYjEIBAQGcNwmRJJyDL9HPiOQwQZ6Ja6i00uPMXyo0AHyaKNKrDLoYWLgMQzTd4xXSrbN4AoAYLEG+haBhAC+8h6/rlUi6kwOrgMAI7xKPnqUQJyXaPr6gH9mBOeAfwLQ0lxibjOeiGrIXQ2Nl3+mvQMmzwrtrokEJUPS4EPI30/3KgAaTSkK9MfTF4VFgHgJAAzuVjZZmSuVeEVBwi4ZptzDN0mMlm8CM3xmDGrZTzjj+NjxWybtpHvmEu74hLFQx7cV5GDmEomXUBEXYqHlt02yRQfcOcAcbpu0CYfqFwG1U+CiHlaFfFUhgKc0VT06GbWAX6e8wf3nBnemEGBT4cqZlMATmSRqjn6cAeICcCYpVxOo8A6gU/jFrgFYnmfAE+8UMmpNV0zyXyrwTiFDcSrr5ELhHHg6mTR1Cq8C+UsATy2uAbnofNCB7pxmLTCF4gLQSw142DMTZXAr2GvyIVVoywRP7cjpMErZPw7Q+78xM41CAIyaP2ypKD9IG5akMMEyH5VswrFFh5R9ASWt2EYffx5cu6feHWVu0N5bsWIcrRyVaJop7gGWR9wvsij62fRdu9cx3rEIH+aqWeBGz4oEh+5uXoZFH2IaRLbBuxvbTghSkJa6p91GcxW6nmVjCA54XYzmLxr18cHN+T3dfJpxeklZbHBQKHIH8N8ZmhI0uJNROzgu5cspms9wMlvnTtuuY+JdOOzslbEb7KmDhdE8aowhN82OIjq+Mdjl+DNt4mEcau6Od/w4WVLUzYLCLy+//Q96mPUGc5WM3gAAAABJRU5ErkJggg==">
+<title>Cinematic Experience | Goldenspire Group</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --ink:#14202E;
+    --ink-2:#1C2C3E;
+    --parchment:#FAF8F3;
+    --brass:#B8923D;
+    --brass-bright:#D4AF5A;
+  }
+  *{margin:0; padding:0; box-sizing:border-box;}
+  html, body{height:100%; background:var(--ink); overflow:hidden;}
+  body{font-family:'Georgia', serif;}
+  canvas{display:block; touch-action:none;}
+
+  main{
+    position:fixed; inset:0; z-index:2; pointer-events:none;
+    display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-end;
+    padding:6vw;
+  }
+  .eyebrow{
+    font-family:'Courier New', monospace; letter-spacing:0.3em; text-transform:uppercase;
+    font-size:0.72rem; color:var(--brass-bright); opacity:0; margin-bottom:14px;
+  }
+  h1{
+    font-size:clamp(2rem, 7vw, 5rem); font-weight:400; color:var(--parchment);
+    line-height:1.02; opacity:0; letter-spacing:-0.01em;
+  }
+  h1 em{ font-style:italic; color:var(--brass-bright); }
+  .hint{
+    position:fixed; bottom:20px; right:24px; z-index:2;
+    font-family:'Courier New', monospace; font-size:0.68rem; letter-spacing:0.15em;
+    text-transform:uppercase; color:rgba(250,248,243,0.35); opacity:0;
+  }
+  .home-link{
+    position:fixed; top:20px; left:24px; z-index:3;
+    font-family:'Courier New', monospace; font-size:0.68rem; letter-spacing:0.15em;
+    text-transform:uppercase; color:rgba(250,248,243,0.55); opacity:0;
+    text-decoration:none; pointer-events:auto; border-bottom:1px solid transparent;
+    transition:color 0.2s ease, border-color 0.2s ease;
+  }
+  .home-link:hover{ color:var(--brass-bright); border-color:var(--brass-bright); }
+  .loading{
+    position:fixed; inset:0; z-index:5; background:var(--ink);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Courier New', monospace; font-size:0.72rem; letter-spacing:0.2em;
+    text-transform:uppercase; color:var(--brass);
+    transition:opacity 0.6s ease;
+  }
+</style>
+</head>
+<body>
+
+<div class="loading" id="loading">Loading Scene&hellip;</div>
+
+<a href="/" class="home-link" id="homeLink">&larr; Goldenspire Group</a>
+<main>
+  <div class="eyebrow" id="eyebrow">Goldenspire Group · Experience</div>
+  <h1 id="title">Built to be <em>seen</em>.</h1>
+</main>
+<div class="hint" id="hint">Drag to orbit</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script type="module">
+import * as THREE from 'three';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { BokehPass } from 'three/addons/postprocessing/BokehPass.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+/* ============================================================
+   PALETTE — single source of truth, mirrors the Goldenspire tokens
+   ============================================================ */
+const PALETTE = {
+  ink: 0x14202e,
+  inkDeep: 0x0b1119,
+  brass: 0xb8923d,
+  brassBright: 0xd4af5a,
+  parchment: 0xfaf8f3,
+};
+
+/* ============================================================
+   ENVIRONMENT — renderer, camera, scene
+   ============================================================ */
+const canvas = document.createElement('canvas');
+document.body.prepend(canvas);
+
+const isMobile = /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+
+const renderer = new THREE.WebGLRenderer({
+  canvas,
+  antialias: !isMobile,          // AA is expensive on mobile GPUs; skip it there
+  powerPreference: 'high-performance',
+  alpha: false,
+  stencil: false,
+});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.75 : 2)); // cap DPR, biggest single mobile perf win
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+renderer.shadowMap.enabled = !isMobile;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(PALETTE.ink);
+scene.fog = new THREE.FogExp2(PALETTE.ink, 0.045);
+
+const camera = new THREE.PerspectiveCamera(
+  35,                                   // cinematic-ish narrow FOV, not a wide fisheye "game" look
+  window.innerWidth / window.innerHeight,
+  0.1,
+  100
+);
+// Establishing position: wide and high, before the GSAP intro pulls it in.
+camera.position.set(0, 3.2, 14);
+camera.lookAt(0, 0, 0);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.06;
+controls.enablePan = false;
+controls.minDistance = 4;
+controls.maxDistance = 18;
+controls.enabled = false; // handed to the visitor only after the intro timeline finishes
+
+/* ============================================================
+   SHARED MATERIALS — shader chunk reuse
+   One material instance is compiled once and reused across every
+   instance in the field below, instead of N unique ShaderMaterials.
+   A fresnel rim-light chunk is injected via onBeforeCompile so the
+   GPU compiles a single program for the whole crystal field.
+   ============================================================ */
+function makeRimLitMaterial(colorHex, opts = {}) {
+  const material = new THREE.MeshStandardMaterial({
+    color: colorHex,
+    metalness: opts.metalness ?? 0.65,
+    roughness: opts.roughness ?? 0.28,
+    emissive: new THREE.Color(PALETTE.brass),
+    emissiveIntensity: 0.0, // driven by the GSAP light-shift timeline, not static
+  });
+
+  material.onBeforeCompile = (shader) => {
+    shader.uniforms.uRimColor = { value: new THREE.Color(PALETTE.brassBright) };
+    shader.uniforms.uRimPower = { value: 2.2 };
+    material.userData.shader = shader; // keep a handle so the render loop can drive uniforms
+
+    shader.fragmentShader = shader.fragmentShader
+      .replace(
+        '#include <common>',
+        `#include <common>
+         uniform vec3 uRimColor;
+         uniform float uRimPower;`
+      )
+      .replace(
+        '#include <dithering_fragment>',
+        `#include <dithering_fragment>
+         float rim = 1.0 - max(dot(normalize(vViewPosition), normalize(vNormal)), 0.0);
+         rim = pow(rim, uRimPower);
+         gl_FragColor.rgb += uRimColor * rim * 0.6;`
+      );
+  };
+
+  return material;
+}
+
+const crystalMaterial = makeRimLitMaterial(PALETTE.inkDeep, { metalness: 0.8, roughness: 0.22 });
+const floorMaterial = makeRimLitMaterial(PALETTE.inkDeep, { metalness: 0.3, roughness: 0.6 });
+
+/* ============================================================
+   GEOMETRY INSTANCING — one draw call for the whole crystal field
+   ============================================================ */
+const CRYSTAL_COUNT = isMobile ? 180 : 420; // scale instance count down on mobile, not the whole scene
+const crystalGeo = new THREE.OctahedronGeometry(0.22, 0);
+const crystalField = new THREE.InstancedMesh(crystalGeo, crystalMaterial, CRYSTAL_COUNT);
+crystalField.instanceMatrix.setUsage(THREE.DynamicDrawUsage); // matrices update every frame for the idle drift
+scene.add(crystalField);
+
+// A pooled dummy transform reused for every instance write — zero per-frame allocation.
+const dummy = new THREE.Object3D();
+const crystalSeeds = new Array(CRYSTAL_COUNT).fill(0).map(() => ({
+  radius: 2.4 + Math.random() * 6,
+  angle: Math.random() * Math.PI * 2,
+  height: (Math.random() - 0.5) * 4,
+  speed: 0.05 + Math.random() * 0.12,
+  spin: Math.random() * Math.PI * 2,
+  spinSpeed: (Math.random() - 0.5) * 0.6,
+  scale: 0.5 + Math.random() * 1.3,
+}));
+
+function layoutCrystalField(time) {
+  for (let i = 0; i < CRYSTAL_COUNT; i++) {
+    const s = crystalSeeds[i];
+    const angle = s.angle + time * s.speed;
+    dummy.position.set(
+      Math.cos(angle) * s.radius,
+      s.height + Math.sin(time * 0.4 + i) * 0.15,
+      Math.sin(angle) * s.radius
+    );
+    dummy.rotation.set(s.spin, s.spin + time * s.spinSpeed, s.spin * 0.5);
+    dummy.scale.setScalar(s.scale);
+    dummy.updateMatrix();
+    crystalField.setMatrixAt(i, dummy.matrix);
+  }
+  crystalField.instanceMatrix.needsUpdate = true;
+}
+layoutCrystalField(0);
+
+/* ============================================================
+   OBJECT POOL — reusable "flare" sprites for light-shift accents
+   Demonstrates get()/release() pooling instead of create/destroy churn.
+   ============================================================ */
+class ObjectPool {
+  constructor(factory, resetFn, size) {
+    this._factory = factory;
+    this._reset = resetFn;
+    this._free = [];
+    this._active = new Set();
+    for (let i = 0; i < size; i++) this._free.push(factory());
+  }
+  acquire() {
+    const obj = this._free.pop() ?? this._factory();
+    this._active.add(obj);
+    obj.visible = true;
+    return obj;
+  }
+  release(obj) {
+    if (!this._active.has(obj)) return;
+    this._active.delete(obj);
+    this._reset(obj);
+    obj.visible = false;
+    this._free.push(obj);
+  }
+  releaseAll() {
+    for (const obj of [...this._active]) this.release(obj);
+  }
+}
+
+const flareTexture = (() => {
+  // Tiny generated radial-gradient sprite — no network asset needed for the demo.
+  const size = 128;
+  const c = document.createElement('canvas');
+  c.width = c.height = size;
+  const ctx = c.getContext('2d');
+  const g = ctx.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
+  g.addColorStop(0, 'rgba(212,175,90,0.9)');
+  g.addColorStop(1, 'rgba(212,175,90,0)');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, size, size);
+  return new THREE.CanvasTexture(c);
+})();
+
+const flareMaterial = new THREE.SpriteMaterial({
+  map: flareTexture,
+  transparent: true,
+  depthWrite: false,
+  blending: THREE.AdditiveBlending,
+});
+
+const flarePool = new ObjectPool(
+  () => {
+    const sprite = new THREE.Sprite(flareMaterial);
+    sprite.visible = false;
+    scene.add(sprite);
+    return sprite;
+  },
+  (sprite) => sprite.scale.set(0, 0, 0),
+  24
+);
+
+function pulseFlare(position, maxScale = 1.4, duration = 1.1) {
+  const sprite = flarePool.acquire();
+  sprite.position.copy(position);
+  sprite.scale.set(0, 0, 0);
+  gsap.to(sprite.scale, {
+    x: maxScale, y: maxScale, z: maxScale,
+    duration: duration * 0.35,
+    ease: 'power2.out',
+    onComplete: () => {
+      gsap.to(sprite.scale, {
+        x: 0, y: 0, z: 0,
+        duration: duration * 0.65,
+        ease: 'power2.in',
+        onComplete: () => flarePool.release(sprite),
+      });
+    },
+  });
+}
+
+/* ============================================================
+   LIGHTING RIG — driven entirely by the GSAP timeline below
+   ============================================================ */
+const keyLight = new THREE.DirectionalLight(PALETTE.brassBright, 0);
+keyLight.position.set(6, 8, 4);
+keyLight.castShadow = !isMobile;
+scene.add(keyLight);
+
+const rimLight = new THREE.DirectionalLight(PALETTE.ink, 0);
+rimLight.position.set(-6, 2, -6);
+scene.add(rimLight);
+
+const ambient = new THREE.AmbientLight(PALETTE.ink, 0.15);
+scene.add(ambient);
+
+const floorGeo = new THREE.CircleGeometry(9, 48);
+const floor = new THREE.Mesh(floorGeo, floorMaterial);
+floor.rotation.x = -Math.PI / 2;
+floor.position.y = -2;
+floor.receiveShadow = !isMobile;
+scene.add(floor);
+
+/* ============================================================
+   POST-PROCESSING — bloom (brass glow) + bokeh (depth of field)
+   ============================================================ */
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+
+const bloomPass = new UnrealBloomPass(
+  new THREE.Vector2(window.innerWidth, window.innerHeight),
+  0.9,   // strength — tuned down at intro, tuned up by the light-shift timeline
+  0.6,   // radius
+  0.72   // threshold — only the brightest brass highlights bloom
+);
+bloomPass.strength = 0;
+composer.addPass(bloomPass);
+
+const bokehPass = new BokehPass(scene, camera, {
+  focus: 10.0,
+  aperture: isMobile ? 0 : 0.0009, // DoF is a desktop-tier cost; skip the blur pass math on mobile
+  maxblur: 0.01,
+});
+if (!isMobile) composer.addPass(bokehPass);
+
+/* ============================================================
+   GSAP CINEMATIC TIMELINE — the 3-second focus-capture sequence
+   ============================================================ */
+const loadingEl = document.getElementById('loading');
+const introTimeline = gsap.timeline({
+  defaults: { ease: 'power3.inOut' },
+  onComplete: () => { controls.enabled = true; },
+});
+
+introTimeline
+  .to(loadingEl, { opacity: 0, duration: 0.4, onComplete: () => loadingEl.remove() }, 0)
+  // Sharp camera transition: wide establishing shot → hero framing
+  .to(camera.position, { x: 0, y: 1.4, z: 6.2, duration: 2.2 }, 0.15)
+  .to(camera.rotation, { x: -0.05, duration: 2.2 }, 0.15)
+  // High-contrast light shift: scene starts near-black, key light snaps in
+  .to(keyLight, { intensity: 2.4, duration: 1.1, ease: 'power2.out' }, 0.6)
+  .to(rimLight, { intensity: 0.9, duration: 1.3, ease: 'power2.out' }, 0.9)
+  .to(ambient, { intensity: 0.35, duration: 1.4 }, 0.6)
+  .to(bloomPass, { strength: 0.65, duration: 1.2, ease: 'power2.out' }, 1.0)
+  // Depth of field pulls focus from background to the crystal field
+  .to(bokehPass.uniforms?.focus ?? {}, { value: 6.2, duration: 1.6, ease: 'power2.inOut' }, 0.8)
+  // Title reveal, timed to land as the light hits — this is the payoff frame
+  .to('#eyebrow', { opacity: 1, y: 0, duration: 0.5 }, 1.7)
+  .fromTo('#title', { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, 1.85)
+  .to('#hint', { opacity: 1, duration: 0.6 }, 2.6)
+  .to('#homeLink', { opacity: 1, duration: 0.6 }, 2.2)
+  .call(() => pulseFlare(new THREE.Vector3(0, 1, 0), 2.2, 1.4), null, 1.9);
+
+/* ============================================================
+   RENDER LOOP
+   ============================================================ */
+const clock = new THREE.Clock();
+
+function tick() {
+  const elapsed = clock.getElapsedTime();
+  layoutCrystalField(elapsed);
+  controls.update();
+  composer.render();
+  requestAnimationFrame(tick);
+}
+tick();
+
+/* ============================================================
+   RESIZE — keep the composer and camera in sync, debounced
+   ============================================================ */
+let resizeHandle;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeHandle);
+  resizeHandle = setTimeout(() => {
+    const w = window.innerWidth, h = window.innerHeight;
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h);
+    composer.setSize(w, h);
+    bloomPass.setSize(w, h);
+  }, 120);
+});
+</script>
+</body>
+</html>
