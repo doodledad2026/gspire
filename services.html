@@ -483,6 +483,35 @@
     color:rgba(241,234,217,0.6);
   }
 
+  /* ---------- SOLUTIONS VISUAL GALLERY ---------- */
+  .visual-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;
+  }
+  @media (max-width:900px){ .visual-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .visual-grid{grid-template-columns:1fr;} }
+  .visual-frame{
+    position:relative; border-radius:var(--radius-lg); overflow:hidden;
+    box-shadow:var(--shadow-md); aspect-ratio:4/3;
+  }
+  .visual-frame img{
+    width:100%; height:100%; object-fit:cover;
+    filter:grayscale(35%) contrast(1.08) brightness(0.92);
+    transition:transform 0.5s var(--ease), filter 0.5s var(--ease);
+  }
+  .visual-card:hover .visual-frame img{ transform:scale(1.04); filter:grayscale(10%) contrast(1.1) brightness(1); }
+  .visual-frame::after{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(200deg, rgba(184,146,61,0.22), rgba(20,32,46,0.5));
+    mix-blend-mode:multiply;
+  }
+  .visual-frame::before{
+    content:''; position:absolute; inset:0; z-index:2; pointer-events:none;
+    border:1px solid rgba(184,146,61,0.35); border-radius:var(--radius-lg);
+  }
+  .visual-caption{margin-top:14px;}
+  .visual-caption .mono{color:var(--brass); font-size:0.7rem; display:block; margin-bottom:4px;}
+  .visual-caption p{color:var(--slate); font-size:0.9rem; margin-bottom:0;}
+
   /* ---------- PORTRAIT ACCENT ---------- */
   .portrait-frame{
     position:relative; border-radius:var(--radius-lg); overflow:hidden;
@@ -798,6 +827,72 @@
     <span class="mono">Built, Not Bolted On</span>
     <p>"Nobody wants another app to log into. The goal is a system that just works in the background, so your team barely notices it's there."</p>
     <div class="attribution">Sean, Goldenspire Group</div>
+  </div>
+</section>
+
+<section id="what-it-looks-like" style="border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="mono">What It Looks Like</span>
+      <h2>A sample of the systems behind the services above.</h2>
+      <p>Illustrative renderings of the kind of interfaces and workflows a build might include, not screenshots of any specific client's live system.</p>
+    </div>
+    <div class="visual-grid reveal-stagger">
+      <div class="visual-card">
+        <div class="visual-frame">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_232210_a393fadf-90cc-4064-ac88-37cc32e300d5.png" alt="Automated customer follow-up text message thread on a smartphone" loading="lazy">
+        </div>
+        <div class="visual-caption">
+          <span class="mono">Customer Intake &amp; Follow-Up</span>
+          <p>Every inquiry gets a fast, on-brand reply and a follow-up sequence, without anyone manually typing it.</p>
+        </div>
+      </div>
+      <div class="visual-card">
+        <div class="visual-frame">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_232148_6bff8dc5-5826-4426-bb73-29ed0c62dc08.png" alt="Color-coded scheduling and dispatch calendar board on a wall-mounted tablet" loading="lazy">
+        </div>
+        <div class="visual-caption">
+          <span class="mono">Scheduling &amp; Dispatch</span>
+          <p>Jobs, crews, and appointments laid out at a glance, synced automatically as bookings change.</p>
+        </div>
+      </div>
+      <div class="visual-card">
+        <div class="visual-frame">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_232148_6f7a335a-f292-476c-8026-cab0d1a7a202.png" alt="Sales pipeline kanban board on a widescreen monitor" loading="lazy">
+        </div>
+        <div class="visual-caption">
+          <span class="mono">Sales &amp; CRM Automation</span>
+          <p>Every deal tracked and moved forward automatically, so nothing sits untouched in a stalled stage.</p>
+        </div>
+      </div>
+      <div class="visual-card">
+        <div class="visual-frame">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_232148_74e1d9b0-611c-4508-a7fe-c07d2986209d.png" alt="Business analytics dashboard with KPI charts on a wall-mounted display" loading="lazy">
+        </div>
+        <div class="visual-caption">
+          <span class="mono">Reporting &amp; Dashboards</span>
+          <p>The numbers that matter, updated automatically and visible at a glance, no manual spreadsheet required.</p>
+        </div>
+      </div>
+      <div class="visual-card">
+        <div class="visual-frame">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_232148_6fafd2f7-8cad-4fbc-8b2f-12899b41a279.png" alt="Digital documents and forms being processed on a laptop" loading="lazy">
+        </div>
+        <div class="visual-caption">
+          <span class="mono">Document &amp; Data Handling</span>
+          <p>Paperwork and intake forms turned into structured, usable data without anyone re-typing it.</p>
+        </div>
+      </div>
+      <div class="visual-card">
+        <div class="visual-frame">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_232148_3f86332c-0b64-4268-878a-46b00f4e64f3.png" alt="Automated invoicing and payments dashboard on a laptop" loading="lazy">
+        </div>
+        <div class="visual-caption">
+          <span class="mono">Payments &amp; Invoicing</span>
+          <p>Invoices generated, sent, and tracked automatically, so payment follow-up stops depending on memory.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

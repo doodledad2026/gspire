@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAwFBMVEWbaR3ZoBNxFAC8pyrGnjB0aSTWayHBmC2yOwCxhx+yiR//AP//qlX//3////8/AAB/f39//wB//3+sfRuqVVWq/wDDmzEAAAC5ky/CmzKwiSa2kyr/fwD//wC0jCV/fwCqqgCvhyOziiKxiyiziBy5fziseg67lCvLozaziiO7lCv/AACzhxi5kiu4kimqqlW0iiO4kiqyhx2xiCeqVQDCmS6YaAa1kiWyhx7Kly6ZmTOsfhX/f3/CmjCxhx7BnDAUTdfGAAAAQHRSTlMJFQMP1AYEdQSrwAEDAgEEAgICQQMDlQD4+i8uAgGQAgNKseksBRCR/m5SARfNbQPGrVAUA7IKDmwJBSYCUY8x6JqrdgAAA41JREFUeNqVloly2zgMhuWrSZq22+5uC5IySUmmKMk6bMn3kfb932oBSm7q2HGynskMQ/PjD4A47MH//HhXdz80xWmp3wFIWMwFLN+voGHDQnf1OFhbz+ZvAWMQaQWf3FqU+m2FAKo0gSNqmLuIq+yARt4EZpCkZYC+SLNKOVcW8iuAfpZ+hFXKNrj4BFO2YgJGkOtzII//UMphwRgemwFsMvFXtoVvFOlY/gY0rY05CWvwGeMVxAB9gC8uXIseWhhrB+BFsA7VfIvRcZ8Yppyh17F7ExlQ2Eykwp5zDxV2QkXR1sgx6nwOcjyYpIzX7iboAqRFFs2TwQAVvGkdKdN+6VetQo1A6bVZ0dddTI9GlfV04wlWtUG6N/4PLsQa8sGQoxMC/sV9k3USZBBUzPf8iS/JaamzIR5T6y/g43nGQ9hDL86YKGyXYjEIBAQGcNwmRJJyDL9HPiOQwQZ6Ja6i00uPMXyo0AHyaKNKrDLoYWLgMQzTd4xXSrbN4AoAYLEG+haBhAC+8h6/rlUi6kwOrgMAI7xKPnqUQJyXaPr6gH9mBOeAfwLQ0lxibjOeiGrIXQ2Nl3+mvQMmzwrtrokEJUPS4EPI30/3KgAaTSkK9MfTF4VFgHgJAAzuVjZZmSuVeEVBwi4ZptzDN0mMlm8CM3xmDGrZTzjj+NjxWybtpHvmEu74hLFQx7cV5GDmEomXUBEXYqHlt02yRQfcOcAcbpu0CYfqFwG1U+CiHlaFfFUhgKc0VT06GbWAX6e8wf3nBnemEGBT4cqZlMATmSRqjn6cAeICcCYpVxOo8A6gU/jFrgFYnmfAE+8UMmpNV0zyXyrwTiFDcSrr5ELhHHg6mTR1Cq8C+UsATy2uAbnofNCB7pxmLTCF4gLQSw142DMTZXAr2GvyIVVoywRP7cjpMErZPw7Q+78xM41CAIyaP2ypKD9IG5akMMEyH5VswrFFh5R9ASWt2EYffx5cu6feHWVu0N5bsWIcrRyVaJop7gGWR9wvsij62fRdu9cx3rEIH+aqWeBGz4oEh+5uXoZFH2IaRLbBuxvbTghSkJa6p91GcxW6nmVjCA54XYzmLxr18cHN+T3dfJpxeklZbHBQKHIH8N8ZmhI0uJNROzgu5cspms9wMlvnTtuuY+JdOOzslbEb7KmDhdE8aowhN82OIjq+Mdjl+DNt4mEcau6Od/w4WVLUzYLCLy+//Q96mPUGc5WM3gAAAABJRU5ErkJggg==">
-<title>Cinematic Experience | Goldenspire Group</title>
+<title>What Precision Looks Like | Goldenspire Group</title>
 <meta name="robots" content="noindex, nofollow">
 <style>
   :root{
@@ -33,6 +35,18 @@
     line-height:1.02; opacity:0; letter-spacing:-0.01em;
   }
   h1 em{ font-style:italic; color:var(--brass-bright); }
+  .subtext{
+    max-width:34ch; margin-top:18px; font-family:'Georgia', serif; font-size:1rem;
+    line-height:1.55; color:rgba(250,248,243,0.72); opacity:0;
+  }
+  .cta-link{
+    display:inline-flex; align-items:center; gap:8px; margin-top:28px;
+    font-family:'Courier New', monospace; font-size:0.78rem; letter-spacing:0.15em;
+    text-transform:uppercase; color:var(--brass-bright); text-decoration:none;
+    opacity:0; pointer-events:auto; border-bottom:1px solid rgba(212,175,90,0.4);
+    padding-bottom:3px; transition:border-color 0.2s ease, gap 0.2s ease;
+  }
+  .cta-link:hover{ border-color:var(--brass-bright); gap:12px; }
   .hint{
     position:fixed; bottom:20px; right:24px; z-index:2;
     font-family:'Courier New', monospace; font-size:0.68rem; letter-spacing:0.15em;
@@ -53,18 +67,45 @@
     text-transform:uppercase; color:var(--brass);
     transition:opacity 0.6s ease;
   }
+  .fallback{
+    position:fixed; inset:0; z-index:6; background:var(--ink);
+    display:none; flex-direction:column; align-items:flex-start; justify-content:center;
+    padding:8vw; max-width:640px;
+  }
+  .fallback.show{ display:flex; }
+  .fallback .eyebrow{ opacity:1; }
+  .fallback h1{ opacity:1; font-size:clamp(1.8rem, 5vw, 3rem); }
+  .fallback .subtext{ opacity:1; }
+  .fallback .cta-link{ opacity:1; }
 </style>
 </head>
 <body>
 
-<div class="loading" id="loading">Loading Scene&hellip;</div>
+<noscript>
+  <div class="fallback show">
+    <div class="eyebrow">Goldenspire Group</div>
+    <h1>This page needs JavaScript &mdash; our systems don&rsquo;t.</h1>
+    <p class="subtext">Enable JavaScript to see this piece, or skip straight to what we actually build for clients.</p>
+    <a href="/" class="cta-link">See what we build &rarr;</a>
+  </div>
+</noscript>
+
+<div class="loading" id="loading">Loading&hellip;</div>
+<div class="fallback" id="fallback">
+  <div class="eyebrow">Goldenspire Group</div>
+  <h1>Your browser can&rsquo;t render this &mdash; our systems still can.</h1>
+  <p class="subtext">This scene needs WebGL, which your current browser or device doesn&rsquo;t support. That's fine &mdash; the systems we build for clients run everywhere, on purpose.</p>
+  <a href="/" class="cta-link">See what we build &rarr;</a>
+</div>
 
 <a href="/" class="home-link" id="homeLink">&larr; Goldenspire Group</a>
 <main>
-  <div class="eyebrow" id="eyebrow">Goldenspire Group · Experience</div>
-  <h1 id="title">Built to be <em>seen</em>.</h1>
+  <div class="eyebrow" id="eyebrow">Goldenspire Group</div>
+  <h1 id="title">Hundreds of moving parts, engineered to feel like <em>one</em>.</h1>
+  <p class="subtext" id="subtext">That's the same discipline behind every system we build: complexity made invisible, so the result feels effortless to the people running your business.</p>
+  <a href="/contact.html" class="cta-link" id="ctaLink">Start a conversation &rarr;</a>
 </main>
-<div class="hint" id="hint">Drag to orbit</div>
+<div class="hint" id="hint">Drag to explore</div>
 
 <script type="importmap">
 {
@@ -98,6 +139,21 @@ const PALETTE = {
 /* ============================================================
    ENVIRONMENT — renderer, camera, scene
    ============================================================ */
+function hasWebGL() {
+  try {
+    const test = document.createElement('canvas');
+    return !!(window.WebGLRenderingContext && (test.getContext('webgl') || test.getContext('experimental-webgl')));
+  } catch (e) {
+    return false;
+  }
+}
+
+if (!hasWebGL()) {
+  document.getElementById('loading')?.remove();
+  document.getElementById('fallback').classList.add('show');
+  throw new Error('WebGL unavailable — showing fallback');
+}
+
 const canvas = document.createElement('canvas');
 document.body.prepend(canvas);
 
@@ -371,6 +427,8 @@ introTimeline
   // Title reveal, timed to land as the light hits — this is the payoff frame
   .to('#eyebrow', { opacity: 1, y: 0, duration: 0.5 }, 1.7)
   .fromTo('#title', { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, 1.85)
+  .fromTo('#subtext', { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 2.35)
+  .fromTo('#ctaLink', { y: 12, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, 2.75)
   .to('#hint', { opacity: 1, duration: 0.6 }, 2.6)
   .to('#homeLink', { opacity: 1, duration: 0.6 }, 2.2)
   .call(() => pulseFlare(new THREE.Vector3(0, 1, 0), 2.2, 1.4), null, 1.9);
