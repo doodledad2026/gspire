@@ -156,6 +156,7 @@
     overflow:hidden;
     border-bottom:1px solid var(--brass);
   }
+  @media (max-width:600px){ .hero{padding:56px 0 64px;} }
   .hero::before{
     content:'';
     position:absolute; inset:0;
