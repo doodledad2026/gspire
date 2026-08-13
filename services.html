@@ -37,6 +37,11 @@
     "addressRegion": "PA",
     "addressCountry": "US"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.1223,
+    "longitude": -77.0355
+  },
   "areaServed": [
     "Dillsburg PA", "Cumberland County PA", "York County PA", "South Central Pennsylvania", "United States (remote engagements)"
   ],
@@ -45,7 +50,24 @@
   "knowsAbout": [
     "AI automation", "Business process automation", "Customer intake automation",
     "Scheduling automation", "Document automation", "Review automation", "Conversational AI", "Systems integration"
-  ]
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Goldenspire Group Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Customer Intake & Follow-Up"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Scheduling & Dispatch"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Website Design & Optimization"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lead Generation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Document & Data Handling"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sales & CRM Automation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Marketing & Follow-Up Campaigns"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reviews & Reputation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reporting & Business Dashboards"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Payments & Invoicing Automation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Vendor Analysis & Due Diligence"}}
+    ]
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -55,6 +77,44 @@
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goldenspiregroup.com/"},
     {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://goldenspiregroup.com/services.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need all of these services, or can I start with one?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start with one. Most engagements begin with whatever's costing you the most time or leads right now, usually intake, scheduling, or CRM, and expand from there once the first system is proven out." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you integrate with the software we already use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In almost every case, yes. We've connected automation to platforms like QuickBooks, Salesforce, HubSpot, ServiceTitan, Housecall Pro, Clio, and dozens of others. If something needs an upgrade to do the job right, we'll tell you before any work starts." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the service I need isn't listed here?",
+      "acceptedAnswer": { "@type": "Answer", "text": "This list covers what comes up most often, not everything we can build. If your business has a repetitive process that isn't on this page, reach out and describe it: there's a good chance it's automatable." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who owns the system once it's built?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You do. Every build runs on accounts in your name, not ours. If you ever stop working with Goldenspire, the system keeps running exactly as it did the day before." }
+    },
+    {
+      "@type": "Question",
+      "name": "Build & Handover or Build & Monitor: which one do I need?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If your team is comfortable owning the system day to day, Build & Handover is usually enough. If you'd rather not think about it, Build & Monitor adds ongoing monitoring and updates for a flat monthly fee." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these custom builds or templates?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Custom. Off-the-shelf tools get you generic automation that half-fits your workflow. Every Goldenspire system is built around how your specific business operates, which is also why it actually gets used six months later." }
+    }
   ]
 }
 </script>
@@ -103,13 +163,14 @@
     <span class="trust-logo">Client-Owned Systems</span>
     <span class="trust-logo">30-Day Build Warranty</span>
     <span class="trust-logo">No Long-Term Contracts</span>
+    <span class="trust-logo">Flat Project Fee, Not Hourly</span>
     <span class="trust-logo">Enterprise-Grade Builds</span>
     <span class="trust-logo">Plain-English, Always</span>
     <span class="trust-logo">Local &amp; Reachable</span>
   </div>
 </div>
 
-<section>
+<section id="services" style="scroll-margin-top:96px;">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="mono">Core Services</span>
@@ -120,37 +181,37 @@
       <div class="service-card">
         <span class="num">01</span>
         <h3>Customer Intake &amp; Follow-Up</h3>
-        <p>An AI assistant that answers inquiries, qualifies leads, and follows up automatically by text, email, or chat, so no lead goes cold waiting on a callback.</p>
+        <p>Most leads go cold in the time it takes to return a call. An AI assistant answers inquiries, qualifies leads, and follows up automatically by text, email, or chat, so nobody's waiting on a callback that comes too late.</p>
         <div class="tools">Live in 1 to 2 weeks · Runs 24/7</div>
       </div>
       <div class="service-card">
         <span class="num">02</span>
         <h3>Scheduling &amp; Dispatch</h3>
-        <p>Automated booking, confirmation, and reminder flows for service calls, appointments, or showings, synced straight to your calendar.</p>
+        <p>Double-bookings and no-shows cost more than they look like they do. Automated booking, confirmation, and reminder flows for service calls, appointments, or showings, synced straight to your calendar.</p>
         <div class="tools">Synced to your calendar · Zero double-bookings</div>
       </div>
       <div class="service-card">
         <span class="num">03</span>
         <h3>Website Design &amp; Optimization</h3>
-        <p>A site built to convert, not just look good: clear positioning, fast load times, and copy that turns visitors into inquiries, backed by real search visibility from day one.</p>
+        <p>A slow, unclear website loses customers before they ever pick up the phone. A site built to convert, not just look good: clear positioning, fast load times, and copy that turns visitors into inquiries, backed by real search visibility from day one.</p>
         <div class="tools">Built to convert · Search-ready from day one</div>
       </div>
       <div class="service-card">
         <span class="num">04</span>
         <h3>Lead Generation</h3>
-        <p>Systems that go out and find your next customer instead of waiting for the phone to ring: targeted outreach, inbound capture, and qualification before a lead ever reaches your inbox.</p>
+        <p>Waiting for the phone to ring leaves growth to chance. Systems that go out and find your next customer instead: targeted outreach, inbound capture, and qualification before a lead ever reaches your inbox.</p>
         <div class="tools">Finds leads, not just captures them</div>
       </div>
       <div class="service-card">
         <span class="num">05</span>
         <h3>Document &amp; Data Handling</h3>
-        <p>Automatically summarize, sort, or extract data from quotes, contracts, and forms, cutting hours of manual entry down to minutes.</p>
+        <p>Manual data entry quietly eats hours that should go to paying work. Automatically summarize, sort, or extract data from quotes, contracts, and forms, cutting hours of retyping down to minutes.</p>
         <div class="tools">Minutes, not hours · Fully auditable</div>
       </div>
       <div class="service-card">
         <span class="num">06</span>
         <h3>Sales &amp; CRM Automation</h3>
-        <p>A pipeline that tracks every deal automatically, nudges follow-up before it's too late, and shows you exactly where revenue is stuck.</p>
+        <p>A CRM nobody keeps updated is just an expensive filing cabinet. A pipeline that tracks every deal automatically, nudges follow-up before it's too late, and shows you exactly where revenue is stuck.</p>
         <div class="tools">No deal falls through the cracks</div>
       </div>
     </div>
@@ -171,25 +232,25 @@
       <div class="service-card">
         <span class="num">07</span>
         <h3>Marketing &amp; Follow-Up Campaigns</h3>
-        <p>Automated email and text sequences that stay in front of leads who aren't ready yet, so they come back to you instead of a competitor.</p>
+        <p>Most leads aren't ready to buy the first time they reach out, and most businesses never follow up again after that. Automated email and text sequences stay in front of them, so they come back to you instead of a competitor.</p>
         <div class="tools">Stays in front of leads automatically</div>
       </div>
       <div class="service-card">
         <span class="num">08</span>
         <h3>Reviews &amp; Reputation</h3>
-        <p>Automated, well-timed review requests after every job or sale, plus a simple system to flag unhappy customers before they post publicly.</p>
+        <p>Happy customers rarely leave a review on their own, and unhappy ones almost always do. Automated, well-timed review requests after every job or sale, plus a simple system to flag unhappy customers before they post publicly.</p>
         <div class="tools">Sent automatically · Complaints caught first</div>
       </div>
       <div class="service-card">
         <span class="num">09</span>
         <h3>Reporting &amp; Business Dashboards</h3>
-        <p>One place that pulls together the numbers scattered across your tools, so you see what's actually happening in the business without digging for it.</p>
+        <p>When your numbers live in five different tools, every decision is made a week late. One place pulls them together, so you see what's actually happening in the business without digging for it.</p>
         <div class="tools">One view, no more spreadsheet hunting</div>
       </div>
       <div class="service-card">
         <span class="num">10</span>
         <h3>Payments &amp; Invoicing Automation</h3>
-        <p>Automated invoicing, payment reminders, and collections follow-up, so getting paid doesn't depend on someone remembering to send a reminder.</p>
+        <p>Late payments are usually a follow-up problem, not a customer problem. Automated invoicing, payment reminders, and collections follow-up mean getting paid doesn't depend on someone remembering to send a reminder.</p>
         <div class="tools">Fewer late payments, less chasing</div>
       </div>
       <div class="service-card">
@@ -348,11 +409,47 @@
   </div>
 </section>
 
+<section id="services-faq" style="background:var(--parchment-2); border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="mono">Questions About These Services</span>
+      <h2>What people ask before picking a service.</h2>
+    </div>
+    <div class="services-grid reveal-stagger">
+      <div class="service-card" style="text-align:left;">
+        <h3 style="margin-bottom:8px;">Do I need all of these services, or can I start with one?</h3>
+        <p style="color:var(--slate); font-size:0.92rem;">Start with one. Most engagements begin with whatever's costing you the most time or leads right now, usually intake, scheduling, or CRM, and expand from there once the first system is proven out.</p>
+      </div>
+      <div class="service-card" style="text-align:left;">
+        <h3 style="margin-bottom:8px;">Can you integrate with the software we already use?</h3>
+        <p style="color:var(--slate); font-size:0.92rem;">In almost every case, yes. We've connected automation to platforms like QuickBooks, Salesforce, HubSpot, ServiceTitan, Housecall Pro, Clio, and dozens of others. If something needs an upgrade to do the job right, we'll tell you before any work starts.</p>
+      </div>
+      <div class="service-card" style="text-align:left;">
+        <h3 style="margin-bottom:8px;">What if the service I need isn't listed here?</h3>
+        <p style="color:var(--slate); font-size:0.92rem;">This list covers what comes up most often, not everything we can build. If your business has a repetitive process that isn't on this page, reach out and describe it: there's a good chance it's automatable.</p>
+      </div>
+      <div class="service-card" style="text-align:left;">
+        <h3 style="margin-bottom:8px;">Who owns the system once it's built?</h3>
+        <p style="color:var(--slate); font-size:0.92rem;">You do. Every build runs on accounts in your name, not ours. If you ever stop working with Goldenspire, the system keeps running exactly as it did the day before.</p>
+      </div>
+      <div class="service-card" style="text-align:left;">
+        <h3 style="margin-bottom:8px;">Build &amp; Handover or Build &amp; Monitor: which one do I need?</h3>
+        <p style="color:var(--slate); font-size:0.92rem;">If your team is comfortable owning the system day to day, Build &amp; Handover is usually enough. If you'd rather not think about it, Build &amp; Monitor adds ongoing monitoring and updates for a flat monthly fee. See the <a href="approach.html#engagement-models" style="color:var(--brass); font-weight:600;">full comparison</a> for details.</p>
+      </div>
+      <div class="service-card" style="text-align:left;">
+        <h3 style="margin-bottom:8px;">Are these custom builds or templates?</h3>
+        <p style="color:var(--slate); font-size:0.92rem;">Custom. Off-the-shelf tools get you generic automation that half-fits your workflow. Every Goldenspire system is built around how your specific business operates, which is also why it actually gets used six months later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="page-cta">
   <div class="wrap">
     <h2>Not sure which service fits?</h2>
     <p>That's exactly what reaching out is for: a plain, no-pitch look at where automation could save you the most time.</p>
     <a href="contact.html" class="btn btn-primary">Reach out for a free consultation</a>
+    <p style="margin-top:16px;"><a href="readiness.html" style="color:var(--brass); font-weight:600;">Not ready to talk yet? Take the free 2-minute readiness check &rarr;</a></p>
   </div>
 </section>
 

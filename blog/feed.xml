@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goldenspire Group Blog</title>
+    <link>https://goldenspiregroup.com/blog/index.html</link>
+    <description>Practical, no-fluff writing on AI automation, business systems, and running a business that doesn't depend entirely on you.</description>
+    <language>en-us</language>
+    <atom:link href="https://goldenspiregroup.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Thu, 13 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>5 Free ChatGPT &amp; Claude Prompts Every Small Business Owner Should Save</title>
+      <link>https://goldenspiregroup.com/blog/free-ai-prompts-for-small-business.html</link>
+      <guid isPermaLink="true">https://goldenspiregroup.com/blog/free-ai-prompts-for-small-business.html</guid>
+      <pubDate>Thu, 13 Aug 2026 12:00:00 GMT</pubDate>
+      <category>AI Prompts</category>
+      <description>The gap between a rough draft and something you&#x27;d actually send comes down to what you feed the AI, not which AI you use.</description>
+    </item>
+    <item>
+      <title>The Free ChatGPT/Claude Prompt We&#x27;d Run Before Automating Anything</title>
+      <link>https://goldenspiregroup.com/blog/free-ai-prompt-automation-audit.html</link>
+      <guid isPermaLink="true">https://goldenspiregroup.com/blog/free-ai-prompt-automation-audit.html</guid>
+      <pubDate>Thu, 13 Aug 2026 11:00:00 GMT</pubDate>
+      <category>AI Prompts</category>
+      <description>One copy-paste prompt that turns a vague feeling of drowning in busywork into a ranked, specific list of what&#x27;s actually worth fixing first.</description>
+    </item>
+    <item>
+      <title>Why Manual Scheduling Is Quietly Costing You Customers</title>
+      <link>https://goldenspiregroup.com/blog/manual-scheduling-costing-you-customers.html</link>
+      <guid isPermaLink="true">https://goldenspiregroup.com/blog/manual-scheduling-costing-you-customers.html</guid>
+      <pubDate>Thu, 13 Aug 2026 10:00:00 GMT</pubDate>
+      <category>Scheduling &amp; Dispatch</category>
+      <description>Double-bookings, no-shows, and phone tag aren&#x27;t just annoying. They&#x27;re a measurable leak in revenue.</description>
+    </item>
+    <item>
+      <title>The Real Cost of Manual Document Handling</title>
+      <link>https://goldenspiregroup.com/blog/cost-of-manual-document-handling.html</link>
+      <guid isPermaLink="true">https://goldenspiregroup.com/blog/cost-of-manual-document-handling.html</guid>
+      <pubDate>Tue, 11 Aug 2026 12:00:00 GMT</pubDate>
+      <category>Document &amp; Data Handling</category>
+      <description>Every form that gets retyped and every file that gets hunted down is time that never shows up on an invoice.</description>
+    </item>
+    <item>
+      <title>How to Tell If Your Business Is Ready for Automation</title>
+      <link>https://goldenspiregroup.com/blog/is-your-business-ready-for-automation.html</link>
+      <guid isPermaLink="true">https://goldenspiregroup.com/blog/is-your-business-ready-for-automation.html</guid>
+      <pubDate>Tue, 04 Aug 2026 12:00:00 GMT</pubDate>
+      <category>Getting Started</category>
+      <description>A practical gut-check for whether automation will actually pay off for your business right now, and the honest signs it might not be time yet.</description>
+    </item>
+    <item>
+      <title>The Real Cost of a Missed Call (And What It&#x27;s Costing You Every Month)</title>
+      <link>https://goldenspiregroup.com/blog/real-cost-of-a-missed-call.html</link>
+      <guid isPermaLink="true">https://goldenspiregroup.com/blog/real-cost-of-a-missed-call.html</guid>
+      <pubDate>Tue, 28 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Customer Experience</category>
+      <description>A missed call feels like a minor inconvenience in the moment. Here&#x27;s how to actually calculate what it&#x27;s costing your business every month.</description>
+    </item>
+    <item>
+      <title>Build &amp; Handover vs. Build &amp; Monitor: Which Fits Your Business?</title>
+      <link>https://goldenspiregroup.com/blog/build-and-handover-vs-build-and-monitor.html</link>
+      <guid isPermaLink="true">https://goldenspiregroup.com/blog/build-and-handover-vs-build-and-monitor.html</guid>
+      <pubDate>Tue, 21 Jul 2026 12:00:00 GMT</pubDate>
+      <category>How We Work</category>
+      <description>The two ways to work with Goldenspire Group after a system is built, and a simple framework for deciding which one fits your business.</description>
+    </item>
+    <item>
+      <title>5 Signs Your CRM Is Quietly Costing You Deals</title>
+      <link>https://goldenspiregroup.com/blog/signs-your-crm-is-costing-you-deals.html</link>
+      <guid isPermaLink="true">https://goldenspiregroup.com/blog/signs-your-crm-is-costing-you-deals.html</guid>
+      <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Sales &amp; CRM</category>
+      <description>A CRM that isn&#x27;t actively working for you is often just an expensive filing cabinet. Here are five signs yours might be costing you deals.</description>
+    </item>
+  </channel>
+</rss>
