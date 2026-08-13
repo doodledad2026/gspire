@@ -56,6 +56,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://goldenspiregroup.com/readiness.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://goldenspiregroup.com/privacy.html</loc>
     <lastmod>2026-08-13</lastmod>
     <priority>0.3</priority>
