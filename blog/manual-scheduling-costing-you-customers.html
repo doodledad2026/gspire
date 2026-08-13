@@ -142,6 +142,15 @@
   <div class="post-hero-image">
     <img src="../images/scheduling-calendar-tablet.jpg" alt="Color-coded scheduling and dispatch calendar board on a wall-mounted tablet" loading="lazy">
   </div>
+  <div class="share-section">
+    <span class="share-label">Share</span>
+    <div class="share-buttons">
+      <button class="share-btn" title="Share on LinkedIn" onclick="shareOnLinkedIn()" aria-label="Share on LinkedIn">in</button>
+      <button class="share-btn" title="Share on Twitter" onclick="shareOnTwitter()" aria-label="Share on Twitter">𝕏</button>
+      <button class="share-btn" title="Share via Email" onclick="shareViaEmail()" aria-label="Share via Email">✉</button>
+      <button class="share-btn copy-link" title="Copy link" onclick="copyLink()" aria-label="Copy link">🔗</button>
+    </div>
+  </div>
 </div>
 
 <section>
@@ -177,6 +186,15 @@
 <p>Businesses that automate scheduling usually notice the same thing first: the phone stops ringing for the reason nobody wants it to ring. Fewer "just confirming" calls, fewer "can we reschedule" calls that turn into ten individual conversations, fewer slots that sit empty because nobody caught a no-show in time. The appointments that do happen are the ones that were actually supposed to happen.</p>
 <p>If scheduling is one of the tasks eating real time in your week, it's usually a <a href="../services.html#services">straightforward system to automate</a>, often one of the faster wins available before tackling anything more complex.</p>
     </div>
+    <div class="newsletter-section reveal">
+      <h3>Get more like this, every week</h3>
+      <p>New post + one actionable insight about business automation in your inbox every Wednesday.</p>
+      <form class="newsletter-form" onsubmit="subscribeToNewsletter(event)">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe</button>
+        <small>Unsubscribe anytime. No spam.</small>
+      </form>
+    </div>
     <div class="post-cta reveal">
       <h3>Not sure where to start?</h3>
       <p>Free consultation, no pitch: just a plain conversation about where automation could save you the most time.</p>
@@ -204,6 +222,62 @@
 </footer>
 
 <script>
+
+  // Share functions
+  function getShareData(){
+    return {
+      title: document.querySelector('h1').textContent,
+      url: window.location.href,
+      description: document.querySelector('.dek').textContent
+    };
+  }
+
+  function shareOnLinkedIn(){
+    const data = getShareData();
+    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(data.url)}`;
+    window.open(linkedInUrl, 'LinkedInShare', 'width=600,height=400');
+  }
+
+  function shareOnTwitter(){
+    const data = getShareData();
+    const tweetText = `${data.title}\n\n${data.url}\n\n#BusinessAutomation`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+    window.open(twitterUrl, 'TwitterShare', 'width=600,height=400');
+  }
+
+  function shareViaEmail(){
+    const data = getShareData();
+    const subject = `Check this out: ${data.title}`;
+    const body = `${data.description}\n\nRead the full article: ${data.url}`;
+    window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
+
+  function copyLink(){
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(function(){
+      alert('Link copied to clipboard!');
+    });
+  }
+
+  function subscribeToNewsletter(e){
+    e.preventDefault();
+    const email = e.target.querySelector('input[type="email"]').value;
+    // MailerLite will handle the actual subscription
+    // This sends to MailerLite via their form
+    fetch('https://assets.mailerlite.com/jsonp/subscribe/12345', {
+      method: 'POST',
+      body: JSON.stringify({
+        email: email,
+        fields: { source: 'blog_post' },
+        source: document.location.href
+      })
+    }).catch(function(){
+      // Fallback: redirect to MailerLite
+      window.ml('webforms.show', 12345);
+    });
+    alert('Thanks! Check your email to confirm.');
+    e.target.reset();
+  }
 
   // Mobile menu toggle
   (function(){
