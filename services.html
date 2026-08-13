@@ -508,6 +508,16 @@
     content:''; position:absolute; inset:0; z-index:2; pointer-events:none;
     border:1px solid rgba(184,146,61,0.35); border-radius:var(--radius-lg);
   }
+  .visual-badge{
+    position:absolute; bottom:14px; left:14px; z-index:3; pointer-events:none;
+    display:inline-flex; align-items:center; gap:9px;
+    background:rgba(20,32,46,0.94); color:var(--parchment);
+    border:1px solid rgba(212,175,90,0.5); border-radius:var(--radius-sm);
+    padding:9px 14px; box-shadow:var(--shadow-md);
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem; font-weight:600;
+    letter-spacing:0.01em; max-width:calc(100% - 28px);
+  }
+  .visual-badge .dot{width:7px; height:7px; border-radius:50%; background:var(--brass-bright); flex-shrink:0;}
   .visual-caption{margin-top:14px;}
   .visual-caption .mono{color:var(--brass); font-size:0.7rem; display:block; margin-bottom:4px;}
   .visual-caption p{color:var(--slate); font-size:0.9rem; margin-bottom:0;}
@@ -861,7 +871,8 @@
     <div class="visual-grid reveal-stagger">
       <div class="visual-card">
         <div class="visual-frame">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260813_005947_6fbbcbe0-13bc-4085-bca5-d5528538d45c.png" alt="Smartphone showing an automated text message reading Appointment Confirmed" loading="lazy">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_234801_007a7dfd-7277-4ea9-a061-0babd8b73f05.png" alt="Person holding a smartphone showing an automated customer follow-up notification" loading="lazy">
+          <div class="visual-badge"><span class="dot"></span>Appointment Confirmed</div>
         </div>
         <div class="visual-caption">
           <span class="mono">Customer Intake &amp; Follow-Up</span>
@@ -870,7 +881,8 @@
       </div>
       <div class="visual-card">
         <div class="visual-frame">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260813_000233_af39c7d0-4c17-4c68-95fa-03f1312d2f5c.png" alt="Wall-mounted tablet showing a weekly calendar with scheduled appointment times" loading="lazy">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_234801_ee861f69-9c10-4a8f-9296-3bbd742fea4d.png" alt="Color-coded scheduling and dispatch calendar board on a wall-mounted tablet" loading="lazy">
+          <div class="visual-badge"><span class="dot"></span>9:00 AM &middot; Booked</div>
         </div>
         <div class="visual-caption">
           <span class="mono">Scheduling &amp; Dispatch</span>
@@ -879,7 +891,8 @@
       </div>
       <div class="visual-card">
         <div class="visual-frame">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260813_000255_3454ccf4-9b02-4094-b561-efe13524af0a.png" alt="Sales pipeline kanban board with New, Contacted, and Won columns" loading="lazy">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_234801_298820ae-4d12-425e-bec8-dfe8fac11377.png" alt="Sales pipeline kanban board on a widescreen monitor" loading="lazy">
+          <div class="visual-badge"><span class="dot"></span>New &rarr; Contacted &rarr; Won</div>
         </div>
         <div class="visual-caption">
           <span class="mono">Sales &amp; CRM Automation</span>
@@ -888,7 +901,8 @@
       </div>
       <div class="visual-card">
         <div class="visual-frame">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260813_000233_c4579f75-b65f-4bab-b7ad-b257affb9582.png" alt="Dashboard display showing the number 42 and the label New Leads This Week" loading="lazy">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_234801_5dd689f4-148b-412b-b73e-bcf1e2c68caf.png" alt="Business analytics dashboard with KPI charts on a wall-mounted display" loading="lazy">
+          <div class="visual-badge"><span class="dot"></span>42 New Leads This Week</div>
         </div>
         <div class="visual-caption">
           <span class="mono">Reporting &amp; Dashboards</span>
@@ -897,7 +911,8 @@
       </div>
       <div class="visual-card">
         <div class="visual-frame">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260813_005947_6b034290-30c9-4937-bdea-31629a4710bf.png" alt="Laptop showing a scanned document marked as Processed" loading="lazy">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_234801_737f2856-e7c2-411e-b125-72cf377da5b6.png" alt="Hands organizing paper documents next to a laptop processing digital files" loading="lazy">
+          <div class="visual-badge"><span class="dot"></span>Processed</div>
         </div>
         <div class="visual-caption">
           <span class="mono">Document &amp; Data Handling</span>
@@ -906,7 +921,8 @@
       </div>
       <div class="visual-card">
         <div class="visual-frame">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260813_005947_d36a86a7-34d9-406d-b970-1d82a5076f6f.png" alt="Laptop showing an invoice marked Paid" loading="lazy">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HipUwRQMioxzygTGUoLhDEsM17/hf_20260812_234801_20e2b4ed-ae10-4e5c-a8ae-79b521c4c909.png" alt="Automated invoicing and payments dashboard on a laptop" loading="lazy">
+          <div class="visual-badge"><span class="dot"></span>$2,450.00 &middot; Paid</div>
         </div>
         <div class="visual-caption">
           <span class="mono">Payments &amp; Invoicing</span>
