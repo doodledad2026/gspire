@@ -10,6 +10,7 @@
 - [Approach](https://goldenspiregroup.com/approach.html): The build methodology, the two engagement models (Build & Handover, Build & Monitor), and what to expect during a project.
 - [Background](https://goldenspiregroup.com/about.html): Who Sean is, his professional AI consulting background, and why Goldenspire Group exists.
 - [Contact](https://goldenspiregroup.com/contact.html): How to reach out for a free, no-pitch consultation.
+- [Blog](https://goldenspiregroup.com/blog/index.html): Practical writing on business automation, AI systems, and running a business that doesn't depend entirely on the owner. Includes posts on automation readiness, the cost of missed calls, the two engagement models, and CRM effectiveness.
 
 ## Key facts
 
