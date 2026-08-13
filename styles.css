@@ -238,6 +238,9 @@
     display:grid; grid-template-columns:repeat(2, 1fr); gap:20px;
   }
   @media (max-width:760px){ .services-grid{grid-template-columns:1fr;} }
+
+  .in-action-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:24px;}
+  @media (max-width:760px){ .in-action-grid{grid-template-columns:1fr;} }
   .service-card{
     background:var(--parchment); padding:36px 32px; border:1px solid var(--line);
     border-radius:var(--radius-md); box-shadow:var(--shadow-sm);
