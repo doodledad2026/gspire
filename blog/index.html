@@ -8,6 +8,7 @@
 <meta name="description" content="Practical, no-fluff writing on AI automation, business systems, and running a business that doesn't depend entirely on you.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://goldenspiregroup.com/blog/index.html">
+<link rel="alternate" type="application/rss+xml" title="Goldenspire Group Blog" href="https://goldenspiregroup.com/blog/feed.xml">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AI Automation Blog | Goldenspire Group">
 <meta property="og:description" content="Practical, no-fluff writing on AI automation, business systems, and running a business that doesn't depend entirely on you.">
@@ -114,6 +115,18 @@
     <span class="breadcrumb"><a href="../index.html">Home</a> / Blog</span>
     <h1>AI Automation Blog</h1>
     <p>Practical, no-fluff writing on AI automation, business systems, and running a business that doesn't depend entirely on you.</p>
+  </div>
+</section>
+
+<section style="background:var(--parchment-2); border-bottom:1px solid var(--line); padding:56px 0;">
+  <div class="wrap reveal" style="max-width:640px; text-align:center;">
+    <span class="mono" style="color:var(--brass); display:block; margin-bottom:12px;">Subscribe</span>
+    <h2 style="font-size:1.4rem; margin-bottom:14px;">Get new posts sent to you, automatically.</h2>
+    <p style="color:var(--slate); margin-bottom:24px;">No account or email address needed on our end. Copy the link below into a free reader like Feedly, or a free RSS-to-email service like Blogtrottr, and every new post lands in your inbox (or reader) the moment it's published.</p>
+    <div class="feed-url-box">
+      <code id="feedUrl">https://goldenspiregroup.com/blog/feed.xml</code>
+      <button type="button" class="feed-copy-btn" id="copyFeedBtn">Copy Link</button>
+    </div>
   </div>
 </section>
 
@@ -296,6 +309,32 @@
       });
     }, {threshold:0, rootMargin:'0px 0px -40px 0px'});
     targets.forEach(function(el){ io.observe(el); });
+  })();
+
+  // Copy feed URL
+  (function(){
+    const btn = document.getElementById('copyFeedBtn');
+    const urlEl = document.getElementById('feedUrl');
+    if(!btn || !urlEl) return;
+    btn.addEventListener('click', function(){
+      const text = urlEl.textContent.trim();
+      const done = function(){
+        const original = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(function(){ btn.textContent = original; }, 2000);
+      };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){
+          const range = document.createRange();
+          range.selectNode(urlEl);
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
+          document.execCommand('copy');
+          window.getSelection().removeAllRanges();
+          done();
+        });
+      }
+    });
   })();
 </script>
 
