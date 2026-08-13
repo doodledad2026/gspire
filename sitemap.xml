@@ -25,6 +25,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://goldenspiregroup.com/blog/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/blog/is-your-business-ready-for-automation.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/blog/real-cost-of-a-missed-call.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/blog/build-and-handover-vs-build-and-monitor.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/blog/signs-your-crm-is-costing-you-deals.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://goldenspiregroup.com/privacy.html</loc>
     <priority>0.3</priority>
   </url>
