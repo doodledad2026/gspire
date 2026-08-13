@@ -84,6 +84,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2574529');
+</script>
+<!-- End MailerLite Universal -->
 </head>
 <body>
 
@@ -122,7 +131,9 @@
   <div class="wrap reveal" style="max-width:640px; text-align:center;">
     <span class="mono" style="color:var(--brass); display:block; margin-bottom:12px;">Subscribe</span>
     <h2 style="font-size:1.4rem; margin-bottom:14px;">Get new posts sent to you, automatically.</h2>
-    <p style="color:var(--slate); margin-bottom:24px;">No account or email address needed on our end. Copy the link below into a free reader like Feedly, or a free RSS-to-email service like Blogtrottr, and every new post lands in your inbox (or reader) the moment it's published.</p>
+    <p style="color:var(--slate); margin-bottom:24px;">Drop your email below and every new post lands straight in your inbox. No spam, unsubscribe anytime.</p>
+    <div class="ml-embedded" data-form="eLxfly"></div>
+    <p style="color:var(--slate); font-size:0.85rem; margin:32px 0 12px;">Prefer RSS? Copy this link into a free reader like Feedly, or a free RSS-to-email bridge like Blogtrottr:</p>
     <div class="feed-url-box">
       <code id="feedUrl">https://goldenspiregroup.com/blog/feed.xml</code>
       <button type="button" class="feed-copy-btn" id="copyFeedBtn">Copy Link</button>
