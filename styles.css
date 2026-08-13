@@ -817,6 +817,20 @@
     font-family:'Fraunces',serif; font-style:italic; font-size:1.2rem; color:var(--ink);
   }
   .article-body a{ color:var(--brass-text); text-decoration:underline; text-underline-offset:2px; }
+  .prompt-box{
+    border-radius:var(--radius-md); padding:20px 24px; margin:16px 0 28px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.85rem; line-height:1.7;
+    white-space:pre-wrap; overflow-x:auto;
+  }
+  .prompt-label{
+    font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase;
+    letter-spacing:0.06em; margin-bottom:10px; display:block; font-weight:600;
+  }
+  .prompt-weak{ background:var(--parchment-2); color:var(--slate); border:1px dashed rgba(184,92,92,0.45); }
+  .prompt-weak .prompt-label{ color:#B85C5C; }
+  .prompt-strong{ background:var(--ink); color:var(--parchment); }
+  .prompt-strong .prompt-label{ color:var(--brass-bright); }
+  .prompt-copy-hint{ font-size:0.78rem; color:var(--slate); margin:-18px 0 28px; font-style:italic; }
   .post-cta{
     max-width:680px; margin:56px auto 0; padding:36px 32px; background:var(--ink); color:var(--parchment);
     border-radius:var(--radius-lg); text-align:center;
