@@ -229,6 +229,7 @@
   /* ---------- SECTION GENERIC ---------- */
   section{padding:88px 0;}
   .section-head{max-width:640px; margin-bottom:56px;}
+  .section-head:last-child{margin-bottom:0;}
   .section-head .mono{color:var(--brass-text); margin-bottom:14px; display:block;}
   .section-head h2{font-size:clamp(1.6rem, 3vw, 2.3rem);}
   .section-head p{color:var(--slate); margin-top:14px; font-size:1.02rem;}
