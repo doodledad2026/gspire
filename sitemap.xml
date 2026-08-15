@@ -205,4 +205,44 @@
     <lastmod>2026-08-15</lastmod>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/dillsburg.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/mechanicsburg.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/carlisle.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/camp-hill.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/york.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/harrisburg.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/lancaster.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>
