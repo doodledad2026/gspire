@@ -11,7 +11,7 @@
 - [Background](https://goldenspiregroup.com/about.html): Who Sean is, his professional AI consulting background, and why Goldenspire Group exists.
 - [Contact](https://goldenspiregroup.com/contact.html): How to reach out for a free, no-pitch consultation.
 - [Readiness Check](https://goldenspiregroup.com/readiness.html): A free, instant self-assessment for whether a business is ready for automation.
-- [Blog](https://goldenspiregroup.com/blog/index.html): Practical writing on business automation, AI systems, and running a business that doesn't depend entirely on the owner. Includes posts on automation readiness, the cost of missed calls, the two engagement models, and CRM effectiveness.
+- [Blog](https://goldenspiregroup.com/blog/index.html): Practical writing on business automation, AI systems, and running a business that doesn't depend entirely on the owner. Includes posts on automation readiness, the cost of missed calls, the two engagement models, CRM effectiveness, the real vs. self-reported AI adoption gap among small businesses (citing SBA Office of Advocacy/Census Bureau data), and the cost of not having a strong website (citing Clutch and BrightLocal research).
 - [Solutions](https://goldenspiregroup.com/solutions.html): Hub page linking to a dedicated write-up for each of the 8 systems Goldenspire builds (customer intake, scheduling/dispatch, CRM/sales pipeline, document/underwriting automation, reporting dashboards, reputation/referral, revenue/cash flow, competitive intelligence).
 - [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Harrisburg, Lancaster), plus remote clients nationwide.
 
