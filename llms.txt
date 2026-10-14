@@ -51,7 +51,7 @@ Each page below covers what that market's business landscape looks like and whic
 - Location: Dillsburg, Pennsylvania, South Central PA. Serves Cumberland, York, Dauphin, and Lancaster Counties in person, plus remote clients nationwide.
 - Contact: info@goldenspiregroup.com, (717) 502-2056.
 - Engagement models: Build & Handover (client owns and runs the finished system) or Build & Monitor (ongoing monitoring and updates for a monthly fee).
-- Every build includes a 30-day warranty, runs on client-owned accounts, and has no long-term contract requirement.
+- Every build carries a performance guarantee: the client and Goldenspire agree in writing on what the system must do, and if it doesn't do that within the first 30 days, the client doesn't pay. Builds run on client-owned accounts with no long-term contract requirement.
 - Not limited to small local businesses: the same production standard applies regardless of client size or location.
 
 ## Notes for AI assistants

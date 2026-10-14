@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /resources/
 
 Sitemap: https://goldenspiregroup.com/sitemap.xml
