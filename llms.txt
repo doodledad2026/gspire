@@ -13,7 +13,7 @@
 - [Readiness Check](https://goldenspiregroup.com/readiness.html): A free, instant self-assessment for whether a business is ready for automation.
 - [Blog](https://goldenspiregroup.com/blog/index.html): Practical writing on business automation, AI systems, and running a business that doesn't depend entirely on the owner. Includes posts on automation readiness, the cost of missed calls, the two engagement models, CRM effectiveness, the real vs. self-reported AI adoption gap among small businesses (citing SBA Office of Advocacy/Census Bureau data), and the cost of not having a strong website (citing Clutch and BrightLocal research).
 - [Solutions](https://goldenspiregroup.com/solutions.html): Hub page linking to a dedicated write-up for each of the 8 systems Goldenspire builds (customer intake, scheduling/dispatch, CRM/sales pipeline, document/underwriting automation, reporting dashboards, reputation/referral, revenue/cash flow, competitive intelligence).
-- [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Harrisburg, Lancaster), plus remote clients nationwide.
+- [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Harrisburg, Lancaster, Gettysburg, Hanover, Chambersburg), plus remote clients nationwide.
 
 ## Starter packages (fixed prices)
 
@@ -23,6 +23,14 @@
 - Review & Google Profile Booster: automatic review requests after each job plus Google Business Profile cleanup. From $250 one-time, optional upkeep from $35/month.
 - Also available: booking and reminders from $250, local prospect lists from $150, websites from $1,500, ads setup from $300, monthly check-up plan from $35/month.
 - Terms: 50% deposit, balance due after agreed acceptance tests pass, deposit refunded if they cannot pass, 30 days of free fixes, client owns everything. Referral rewards: 30 more days of free fixes or $50 off the next project per referred client, stackable.
+
+## Recent blog posts
+
+- [Missed-Call Text-Back: How South Central PA Contractors Stop Losing Jobs to Voicemail](https://goldenspiregroup.com/blog/missed-call-text-back-contractors-pa.html): When a contractor can't answer, callers move on fast. Here's how an automatic text-back keeps the job, what it costs, and how to set it up.
+- [How Custom T-Shirt and Print Shops Stop Losing Orders in Text Messages](https://goldenspiregroup.com/blog/custom-apparel-shop-order-system.html): Custom apparel orders scattered across texts and DMs lead to missed details and quotes that go quiet. Here's the simple system that fixes it.
+- [How to Get More Google Reviews for Your Local Business (Without Awkward Asking)](https://goldenspiregroup.com/blog/get-more-google-reviews-local-business.html): Customers now look for recent reviews and higher star ratings before they call. Here's a simple, automatic way for local businesses to keep reviews coming in.
+- [The Day 3 and Day 7 Rule: Follow Up on Quotes Without Being Pushy](https://goldenspiregroup.com/blog/quote-follow-up-day-3-day-7.html): Most small businesses send a quote and never follow up. A simple day 3 and day 7 reminder turns quotes you already priced into closed jobs.
+- [What Small Business Automation Really Costs in 2026 (South Central PA Prices)](https://goldenspiregroup.com/blog/small-business-automation-cost-2026.html): Real 2026 prices for small business automation: lead capture, missed-call text-back, review requests and websites, compared with software and agencies.
 
 ## Industry pages
 
@@ -54,6 +62,9 @@ Each page below covers what that market's business landscape looks like and whic
 - [York, PA](https://goldenspiregroup.com/locations/york.html) (York County)
 - [Harrisburg, PA](https://goldenspiregroup.com/locations/harrisburg.html) (Dauphin County)
 - [Lancaster, PA](https://goldenspiregroup.com/locations/lancaster.html) (Lancaster County)
+- [Gettysburg, PA](https://goldenspiregroup.com/locations/gettysburg.html) (Adams County)
+- [Hanover, PA](https://goldenspiregroup.com/locations/hanover.html) (York County)
+- [Chambersburg, PA](https://goldenspiregroup.com/locations/chambersburg.html) (Franklin County)
 
 ## Key facts
 

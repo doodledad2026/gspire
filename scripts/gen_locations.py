@@ -68,9 +68,36 @@ CITIES = [
         "industries": ["retail", "real-estate", "professional-services", "architecture"],
         "lat": 40.0379, "lng": -76.3055,
     },
+    {
+        "slug": "gettysburg",
+        "name": "Gettysburg",
+        "county": "Adams County",
+        "minutes": "35 minutes",
+        "character": "Gettysburg is the Adams County seat and one of Pennsylvania's busiest tourism towns, with visitors spending more than $800 million a year across the county. That feeds restaurants, lodging, gift and apparel shops, wineries, orchards and event venues, most of them owner-run and juggling bookings, group orders and inquiries by phone and Facebook.",
+        "industries": ["retail", "construction", "landscaping", "auto-services"],
+        "lat": 39.8309, "lng": -77.2311,
+    },
+    {
+        "slug": "hanover",
+        "name": "Hanover",
+        "county": "York County",
+        "minutes": "35–40 minutes",
+        "character": "Hanover sits on the York and Adams County line near the Maryland border, with a long manufacturing history and a busy base of contractors, custom print and apparel shops, auto services and retail. Many of these businesses run on a phone that rings while the owner is on the shop floor or a job site.",
+        "industries": ["manufacturing", "construction", "retail", "auto-services"],
+        "lat": 39.8007, "lng": -76.9830,
+    },
+    {
+        "slug": "chambersburg",
+        "name": "Chambersburg",
+        "county": "Franklin County",
+        "minutes": "45 minutes",
+        "character": "Chambersburg is the Franklin County seat along the I-81 corridor, with manufacturing, distribution, agriculture and a strong base of trades, salons and local retail. It's a market where word of mouth still drives business, so a fast reply and a strong set of recent reviews make a real difference.",
+        "industries": ["manufacturing", "hvac", "salons", "retail"],
+        "lat": 39.9376, "lng": -77.6611,
+    },
 ]
 
-LOCATION_TEASERS = {'dillsburg': 'Home base. Small-town main street businesses, contractors, and shops running on phone calls and paper.', 'mechanicsburg': 'Cumberland County logistics and distribution corridor, with a growing base of professional services.', 'carlisle': 'County seat with a manufacturing, logistics, and college-town retail mix along the I-81 corridor.', 'camp-hill': 'Dense professional-services and healthcare-adjacent market just across the river from Harrisburg.', 'york': 'Historic manufacturing city rebuilding its downtown around small business and skilled trades.', 'harrisburg': 'State capital with a heavy concentration of law, insurance, and financial-services firms.', 'lancaster': 'Agriculture, tourism, and a fast-growing downtown retail and professional-services scene.'}
+LOCATION_TEASERS = {'dillsburg': 'Home base. Small-town main street businesses, contractors, and shops running on phone calls and paper.', 'mechanicsburg': 'Cumberland County logistics and distribution corridor, with a growing base of professional services.', 'carlisle': 'County seat with a manufacturing, logistics, and college-town retail mix along the I-81 corridor.', 'camp-hill': 'Dense professional-services and healthcare-adjacent market just across the river from Harrisburg.', 'york': 'Historic manufacturing city rebuilding its downtown around small business and skilled trades.', 'harrisburg': 'State capital with a heavy concentration of law, insurance, and financial-services firms.', 'lancaster': 'Agriculture, tourism, and a fast-growing downtown retail and professional-services scene.', 'gettysburg': 'Tourism, lodging, wineries and owner-run shops taking bookings and group orders by phone and Facebook.', 'hanover': 'Manufacturing, contractors and custom print shops on the York and Adams County line.', 'chambersburg': 'Franklin County seat on I-81 with trades, salons, retail and agriculture.'}
 
 INDUSTRY_LABELS = {
     "real-estate": "Real Estate",
@@ -95,12 +122,12 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="../images/favicon.png">
-<title>AI Automation &amp; Business Systems in {name}, PA | Goldenspire Group</title>
-<meta name="description" content="Goldenspire Group builds AI automation and business systems for {name}, PA companies: customer intake, scheduling, documents, reviews, and reporting, built around how your business actually runs.">
+<title>AI Automation in {name}, PA | Goldenspire Group</title>
+<meta name="description" content="Lead capture, quote follow-up, missed-call text-back and review automation for {name}, PA businesses. Fixed starter prices, built locally in South Central PA.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://goldenspiregroup.com/locations/{slug}.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="AI Automation &amp; Business Systems in {name}, PA | Goldenspire Group">
+<meta property="og:title" content="AI Automation in {name}, PA | Goldenspire Group">
 <meta property="og:description" content="Goldenspire Group builds AI automation and business systems for {name}, PA companies: customer intake, scheduling, documents, reviews, and reporting.">
 <meta property="og:url" content="https://goldenspiregroup.com/locations/{slug}.html">
 <meta property="og:site_name" content="Goldenspire Group">
@@ -108,7 +135,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <meta property="og:image" content="https://goldenspiregroup.com/images/social-share-banner.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://goldenspiregroup.com/images/social-share-banner.jpg">
-<meta name="twitter:title" content="AI Automation &amp; Business Systems in {name}, PA | Goldenspire Group">
+<meta name="twitter:title" content="AI Automation in {name}, PA | Goldenspire Group">
 <meta name="twitter:description" content="Goldenspire Group builds AI automation and business systems for {name}, PA companies.">
 
 <script type="application/ld+json">
@@ -177,7 +204,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     {{
       "@type": "Question",
       "name": "What does this cost?",
-      "acceptedAnswer": {{ "@type": "Answer", "text": "Every build is scoped to your business after you reach out, so pricing is never one-size-fits-all. Engagements are structured as a flat project fee, not billed hourly, so you know the full cost before any work starts." }}
+      "acceptedAnswer": {{ "@type": "Answer", "text": "Starter packages begin at $250 to $500 one-time, such as the Never-Miss-a-Lead Setup from $500 and the Review and Google Profile Booster from $250. Larger builds are scoped after a free consultation, always as a flat project fee, so you know the full cost before any work starts." }}
     }}
   ]
 }}
@@ -272,7 +299,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="service-card" style="text-align:left;">
         <h3 style="margin-bottom:8px;">What does this cost?</h3>
-        <p style="color:var(--slate); font-size:0.92rem;">Every build is scoped to your business after you reach out, so pricing is never one-size-fits-all. Engagements are structured as a flat project fee, not billed hourly, so you know the full cost before any work starts.</p>
+        <p style="color:var(--slate); font-size:0.92rem;">Starter packages begin at $250 to $500 one-time, such as the Never-Miss-a-Lead Setup from $500 and the Review &amp; Google Profile Booster from $250 (<a href="../index.html#packages" style="color:var(--brass); font-weight:600;">see all prices</a>). Larger builds are scoped after a free consultation, always as a flat project fee, so you know the full cost before any work starts.</p>
       </div>
     </div>
   </div>
