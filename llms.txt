@@ -15,6 +15,15 @@
 - [Solutions](https://goldenspiregroup.com/solutions.html): Hub page linking to a dedicated write-up for each of the 8 systems Goldenspire builds (customer intake, scheduling/dispatch, CRM/sales pipeline, document/underwriting automation, reporting dashboards, reputation/referral, revenue/cash flow, competitive intelligence).
 - [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Harrisburg, Lancaster), plus remote clients nationwide.
 
+## Starter packages (fixed prices)
+
+- Never-Miss-a-Lead Setup: order, request and quote forms with instant customer confirmation, owner alerts, one tracker and rush flags. From $500 one-time, live in about a week.
+- Quote Follow-Up Autopilot: automatic day 3 and day 7 reminders on unanswered quotes. From $300, included with the Never-Miss-a-Lead Setup.
+- Missed-Call Text-Back: an instant text to missed callers with a link to a request form. From $300 one-time, works with the client's business phone plan.
+- Review & Google Profile Booster: automatic review requests after each job plus Google Business Profile cleanup. From $250 one-time, optional upkeep from $35/month.
+- Also available: booking and reminders from $250, local prospect lists from $150, websites from $1,500, ads setup from $300, monthly check-up plan from $35/month.
+- Terms: 50% deposit, balance due after agreed acceptance tests pass, deposit refunded if they cannot pass, 30 days of free fixes, client owns everything. Referral rewards: 30 more days of free fixes or $50 off the next project per referred client, stackable.
+
 ## Industry pages
 
 Each page below covers the specific problems, approach, and typical impact for that industry:
