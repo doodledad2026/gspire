@@ -95,9 +95,36 @@ CITIES = [
         "industries": ["manufacturing", "hvac", "salons", "retail"],
         "lat": 39.9376, "lng": -77.6611,
     },
+    {
+        "slug": "hershey",
+        "name": "Hershey",
+        "county": "Dauphin County",
+        "minutes": "40 minutes",
+        "character": "Hershey anchors eastern Dauphin County with tourism, hospitality, a major medical center and the shops, restaurants, contractors and service businesses that support them. Seasonal visitor traffic means bookings, inquiries and reviews pile up fast, often faster than a small team can answer.",
+        "industries": ["retail", "salons", "professional-services", "construction"],
+        "lat": 40.2859, "lng": -76.6502,
+    },
+    {
+        "slug": "new-cumberland",
+        "name": "New Cumberland",
+        "county": "Cumberland County",
+        "minutes": "20 minutes",
+        "character": "New Cumberland sits on the West Shore along the Susquehanna, a short drive from Harrisburg, with a tight-knit mix of local shops, restaurants, contractors and professional offices. Most are owner-run, so the phone, the inbox and the quote follow-ups all land on the same person.",
+        "industries": ["construction", "retail", "professional-services", "hvac"],
+        "lat": 40.2318, "lng": -76.8786,
+    },
+    {
+        "slug": "shippensburg",
+        "name": "Shippensburg",
+        "county": "Cumberland County",
+        "minutes": "40 minutes",
+        "character": "Shippensburg straddles the Cumberland and Franklin County line along I-81, home to Shippensburg University, distribution centers, farms and a main street of local shops and trades. Many businesses here serve both the college crowd and longtime local customers, and both expect a fast reply.",
+        "industries": ["retail", "manufacturing", "auto-services", "landscaping"],
+        "lat": 40.0509, "lng": -77.5203,
+    },
 ]
 
-LOCATION_TEASERS = {'dillsburg': 'Home base. Small-town main street businesses, contractors, and shops running on phone calls and paper.', 'mechanicsburg': 'Cumberland County logistics and distribution corridor, with a growing base of professional services.', 'carlisle': 'County seat with a manufacturing, logistics, and college-town retail mix along the I-81 corridor.', 'camp-hill': 'Dense professional-services and healthcare-adjacent market just across the river from Harrisburg.', 'york': 'Historic manufacturing city rebuilding its downtown around small business and skilled trades.', 'harrisburg': 'State capital with a heavy concentration of law, insurance, and financial-services firms.', 'lancaster': 'Agriculture, tourism, and a fast-growing downtown retail and professional-services scene.', 'gettysburg': 'Tourism, lodging, wineries and owner-run shops taking bookings and group orders by phone and Facebook.', 'hanover': 'Manufacturing, contractors and custom print shops on the York and Adams County line.', 'chambersburg': 'Franklin County seat on I-81 with trades, salons, retail and agriculture.'}
+LOCATION_TEASERS = {'dillsburg': 'Home base. Small-town main street businesses, contractors, and shops running on phone calls and paper.', 'mechanicsburg': 'Cumberland County logistics and distribution corridor, with a growing base of professional services.', 'carlisle': 'County seat with a manufacturing, logistics, and college-town retail mix along the I-81 corridor.', 'camp-hill': 'Dense professional-services and healthcare-adjacent market just across the river from Harrisburg.', 'york': 'Historic manufacturing city rebuilding its downtown around small business and skilled trades.', 'harrisburg': 'State capital with a heavy concentration of law, insurance, and financial-services firms.', 'lancaster': 'Agriculture, tourism, and a fast-growing downtown retail and professional-services scene.', 'gettysburg': 'Tourism, lodging, wineries and owner-run shops taking bookings and group orders by phone and Facebook.', 'hanover': 'Manufacturing, contractors and custom print shops on the York and Adams County line.', 'chambersburg': 'Franklin County seat on I-81 with trades, salons, retail and agriculture.', 'hershey': 'Tourism, hospitality and healthcare in eastern Dauphin County, with busy local shops and services.', 'new-cumberland': 'West Shore borough of owner-run shops, contractors and professional offices near Harrisburg.', 'shippensburg': 'College town on I-81 with distribution, farms, trades and main street shops.'}
 
 INDUSTRY_LABELS = {
     "real-estate": "Real Estate",

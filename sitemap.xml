@@ -305,4 +305,19 @@
     <lastmod>2026-10-24</lastmod>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/hershey.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/new-cumberland.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goldenspiregroup.com/locations/shippensburg.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>

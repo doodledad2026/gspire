@@ -46,6 +46,7 @@
     font-size:0.72rem;
   }
   img, svg{display:block; max-width:100%;}
+  img{height:auto;}
   .wrap{max-width:1120px; margin:0 auto; padding:0 28px;}
 
   /* Focus states */
@@ -994,4 +995,20 @@
     .newsletter-form input, .newsletter-form button{
       width:100%;
     }
+  }
+
+  /* ---------- MOBILE POLISH ---------- */
+  @media (max-width:600px){
+    .wrap{padding:0 18px;}
+    /* 16px stops iPhones from zooming in when a form field is tapped */
+    input, textarea, select, .newsletter-form input{font-size:16px;}
+    /* small uppercase labels stay readable on phones */
+    .mono, .trust-label, .stat-banner-label, .outcome-label, .stat-label, .bento-badge, .breadcrumb, .post-meta, .post-meta span, .share-label{font-size:0.78rem;}
+    label{font-size:0.82rem;}
+    .comparison-table{font-size:0.82rem;}
+    /* bigger tap targets */
+    .breadcrumb a{display:inline-block; padding:12px 4px;}
+    header .brand{min-height:44px; display:flex; align-items:center;}
+    .industry-tag{padding-top:12px; padding-bottom:12px;}
+    footer a{display:inline-block; padding:10px 0;}
   }

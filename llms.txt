@@ -13,7 +13,7 @@
 - [Readiness Check](https://goldenspiregroup.com/readiness.html): A free, instant self-assessment for whether a business is ready for automation.
 - [Blog](https://goldenspiregroup.com/blog/index.html): Practical writing on business automation, AI systems, and running a business that doesn't depend entirely on the owner. Includes posts on automation readiness, the cost of missed calls, the two engagement models, CRM effectiveness, the real vs. self-reported AI adoption gap among small businesses (citing SBA Office of Advocacy/Census Bureau data), and the cost of not having a strong website (citing Clutch and BrightLocal research).
 - [Solutions](https://goldenspiregroup.com/solutions.html): Hub page linking to a dedicated write-up for each of the 8 systems Goldenspire builds (customer intake, scheduling/dispatch, CRM/sales pipeline, document/underwriting automation, reporting dashboards, reputation/referral, revenue/cash flow, competitive intelligence).
-- [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Harrisburg, Lancaster, Gettysburg, Hanover, Chambersburg), plus remote clients nationwide.
+- [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Harrisburg, Lancaster, Gettysburg, Hanover, Chambersburg, Hershey, New Cumberland, Shippensburg), plus remote clients nationwide.
 
 ## Starter packages (fixed prices)
 
@@ -65,6 +65,9 @@ Each page below covers what that market's business landscape looks like and whic
 - [Gettysburg, PA](https://goldenspiregroup.com/locations/gettysburg.html) (Adams County)
 - [Hanover, PA](https://goldenspiregroup.com/locations/hanover.html) (York County)
 - [Chambersburg, PA](https://goldenspiregroup.com/locations/chambersburg.html) (Franklin County)
+- [Hershey, PA](https://goldenspiregroup.com/locations/hershey.html) (Dauphin County)
+- [New Cumberland, PA](https://goldenspiregroup.com/locations/new-cumberland.html) (Cumberland County)
+- [Shippensburg, PA](https://goldenspiregroup.com/locations/shippensburg.html) (Cumberland County)
 
 ## Key facts
 
