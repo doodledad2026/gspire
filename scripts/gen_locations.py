@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# WARNING: the location pages were redesigned by hand after this script was written
+# (new navigation, footer, layout and copy). Re-running it will overwrite
+# locations/*.html with the older templates below. Update the templates first.
 """One-off generator for the /locations/ city pages. Run from repo root."""
 import os
 
@@ -150,7 +153,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <title>AI Automation in {name}, PA | Goldenspire Group</title>
-<meta name="description" content="Lead capture, quote follow-up, missed-call text-back and review automation for {name}, PA businesses. Fixed starter prices, built locally in South Central PA.">
+<meta name="description" content="Lead capture, quote follow-up, missed-call text-back and review automation for {name}, PA businesses. Free consultation, built locally in South Central PA.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://goldenspiregroup.com/locations/{slug}.html">
 <meta property="og:type" content="website">
@@ -231,7 +234,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     {{
       "@type": "Question",
       "name": "What does this cost?",
-      "acceptedAnswer": {{ "@type": "Answer", "text": "Starter packages begin at $250 to $500 one-time, such as the Never-Miss-a-Lead Setup from $500 and the Review and Google Profile Booster from $250. Larger builds are scoped after a free consultation, always as a flat project fee, so you know the full cost before any work starts." }}
+      "acceptedAnswer": {{ "@type": "Answer", "text": "Every project is scoped after a free consultation and quoted as a flat project fee, so you know the full cost before any work starts. Starter packages like the Never-Miss-a-Lead Setup and the Review and Google Profile Booster are quick, fixed-scope setups." }}
     }}
   ]
 }}
@@ -326,7 +329,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="service-card" style="text-align:left;">
         <h3 style="margin-bottom:8px;">What does this cost?</h3>
-        <p style="color:var(--slate); font-size:0.92rem;">Starter packages begin at $250 to $500 one-time, such as the Never-Miss-a-Lead Setup from $500 and the Review &amp; Google Profile Booster from $250 (<a href="../index.html#packages" style="color:var(--brass); font-weight:600;">see all prices</a>). Larger builds are scoped after a free consultation, always as a flat project fee, so you know the full cost before any work starts.</p>
+        <p style="color:var(--slate); font-size:0.92rem;">Every project is scoped after a free consultation and quoted as a flat project fee, so you know the full cost before any work starts. Our <a href="../index.html#packages" style="color:var(--brass); font-weight:600;">starter packages</a> are quick, fixed-scope setups for the most common problems.</p>
       </div>
     </div>
   </div>
