@@ -130,7 +130,7 @@
 </section>
 
 <section style="background:var(--parchment-2); border-bottom:1px solid var(--line); padding:56px 0;">
-  <div class="wrap reveal" style="max-width:640px; text-align:center;">
+  <div class="wrap reveal narrow-left">
     <span class="mono" style="color:var(--brass); display:block; margin-bottom:12px;">Subscribe</span>
     <h2 style="font-size:1.4rem; margin-bottom:14px;">Get new posts sent to you, automatically.</h2>
     <p style="color:var(--slate); margin-bottom:24px;">Drop your email below and every new post lands straight in your inbox. No spam, unsubscribe anytime.</p>
@@ -159,6 +159,19 @@
           <span class="post-card-link">Read the post &rarr;</span>
         </div>
       </a>
+      <a href="esthetician-studio-website.html" class="post-card">
+        <div class="post-card-image">
+          <img src="https://images.pexels.com/photos/31547790/pexels-photo-31547790/free-photo-of-skincare-beauty-tools-on-display.jpeg?auto=compress&cs=tinysrgb&w=800&h=450&fit=crop" alt="Skincare tools and products on display" loading="lazy" width="800" height="450">
+        </div>
+        <div class="post-card-body">
+          <div class="post-meta">
+            <span>Client Work</span><span class="sep">&middot;</span><span>3 min read</span>
+          </div>
+          <h3>An Esthetician Studio in Mechanicsburg: A Website Built to Book Appointments</h3>
+          <p>A skincare studio in Mechanicsburg, a website built from scratch, and one goal: make it easy for a new client to trust the studio and book.</p>
+          <span class="post-card-link">Read the post &rarr;</span>
+        </div>
+      </a>
       <a href="missed-call-text-back-contractors-pa.html" class="post-card">
         <div class="post-card-image">
           <img src="https://images.unsplash.com/photo-1621905253185-95614217f357?auto=format&fit=crop&w=800&h=450&q=75" alt="Contractor in a hard hat checking his smartphone on the job" loading="lazy" width="800" height="450">
@@ -174,7 +187,7 @@
       </a>
       <a href="custom-apparel-shop-order-system.html" class="post-card">
         <div class="post-card-image">
-          <img src="https://images.unsplash.com/photo-1456456496250-d5e7c0a9b44d?auto=format&fit=crop&w=800&h=450&q=75" alt="Screen printer holding a printing screen in a print shop" loading="lazy" width="800" height="450">
+          <img src="https://images.pexels.com/photos/32641559/pexels-photo-32641559/free-photo-of-textile-workshop-with-screen-printing-frames-in-apucarana.jpeg?auto=compress&cs=tinysrgb&w=800&h=450&fit=crop" alt="Screen printing frames in a textile print workshop" loading="lazy" width="800" height="450">
         </div>
         <div class="post-card-body">
           <div class="post-meta">
@@ -475,7 +488,7 @@
         btn.textContent = 'Copied!';
         setTimeout(function(){ btn.textContent = original; }, 2000);
       };
-      if(navigator.clipboard && navigator.clipboard.writeText){
+      if(navigator.clipboard & navigator.clipboard.writeText){
         navigator.clipboard.writeText(text).then(done).catch(function(){
           const range = document.createRange();
           range.selectNode(urlEl);

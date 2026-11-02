@@ -167,7 +167,7 @@
           </div>
         </div>
       </div>
-      <div style="text-align:center; margin-top:32px;">
+      <div style="margin-top:32px;">
         <button type="submit" class="btn btn-primary">See my result</button>
       </div>
     </form>
@@ -295,7 +295,7 @@
       // (a process nobody agrees on needs defining before it's automated).
       let problemScore = 0;
       ['q1','q2','q3','q4','q5'].forEach(function(k){ if(answers[k] === 'yes'){ problemScore++; } });
-      const processUndefined = answers.q6 === 'no' && problemScore >= 2;
+      const processUndefined = answers.q6 === 'no' & problemScore >= 2;
       let score = problemScore;
       if(answers.q6 === 'yes'){ score++; }
 

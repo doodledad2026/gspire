@@ -1061,3 +1061,76 @@ a.cap-link{display:block; text-decoration:none; color:inherit;}
 a.cap-link h3::after{content:' →'; color:var(--brass-text); transition:margin 0.3s var(--ease);}
 a.cap-link:hover h3{color:var(--brass-text);}
 nav a[aria-current="page"]{color:var(--brass-text);}
+
+/* =========================================================
+   Spacing pass
+   ========================================================= */
+/* Two neighbouring sections with the same background: don't double the gap */
+section.flush-top{padding-top:0 !important;}
+/* Article body right after the share bar */
+.wrap:has(> .share-section) + section{padding-top:48px;}
+.client-panel-text{padding:20px 24px; text-align:left;}
+.story-grid-3{grid-template-columns:repeat(3,1fr);}
+@media (max-width:1000px){ .story-grid-3{grid-template-columns:1fr 1fr;} }
+
+@media (max-width:860px){
+  .person-mark{display:none;}
+  .person{gap:0;}
+  .section-head{margin-bottom:44px;}
+  .section-head.split{gap:16px;}
+  .section-head.split .mono{margin-bottom:0;}
+  .page-cta{padding:80px 0;}
+  .big-cta{padding-top:88px;}
+  .big-cta + .contact{padding-top:48px;}
+  .story-grid, .story-grid-3{grid-template-columns:1fr; gap:48px;}
+  .faq-layout{gap:8px;}
+  footer{padding-top:64px;}
+  .footer-top{gap:32px; padding-bottom:40px;}
+}
+
+@media (max-width:600px){
+  section{padding:64px 0;}
+  .hero.hero-light{padding-top:40px;}
+  .hero-light .eyebrow{margin-bottom:20px;}
+  .hero-intro{gap:20px;}
+  .hero-photo{margin-top:32px; aspect-ratio:3/2;}
+  .page-header{padding:56px 0 48px;}
+  .page-header h1{margin-bottom:16px;}
+  .breadcrumb{margin-bottom:16px;}
+  .section-head{margin-bottom:36px;}
+  .section-head h2{font-size:clamp(1.9rem, 8.5vw, 2.4rem);}
+  .section-head p{margin-top:12px; font-size:1rem;}
+  /* buttons: full width, centred, easy to tap */
+  .btn{width:100%; justify-content:center;}
+  .btn-row{gap:10px;}
+  .entry-grid{gap:16px;}
+  .entry-card .body{padding:22px 22px 24px;}
+  .cap-grid{gap:32px;}
+  .index-row{padding:24px 0;}
+  .services-grid{gap:32px;}
+  .faq-item summary{padding:20px 40px 20px 0;}
+  .faq-item .faq-body{padding:0 0 24px 0;}
+  .finding{padding:22px 0;}
+  .ratio-bar{margin-bottom:32px;}
+  .framework-grid{gap:24px;}
+  .page-cta{padding:64px 0;}
+  .big-cta{padding-top:64px;}
+  .big-cta h2{font-size:clamp(2.6rem, 13vw, 3.6rem);}
+  .contact-grid{gap:40px;}
+  .facts{gap:16px; margin-top:24px; padding-top:20px;}
+  .photo-break{min-height:0;}
+  .photo-break-content{padding:56px var(--gutter);}
+  .post-cta, .newsletter-section{padding:32px 24px;}
+  .wrap:has(> .share-section) + section{padding-top:32px;}
+  .post-hero-image{margin-top:32px; aspect-ratio:16/10;}
+  /* "What you get" strip: compact chips instead of a centred stack */
+  .trust-bar{padding:20px 0;}
+  .trust-bar-inner{justify-content:flex-start; gap:8px;}
+  .trust-bar-inner .trust-label{width:100%; text-align:left; margin:0 0 4px;}
+  .trust-bar-inner .trust-logo{font-family:var(--sans); font-weight:500; font-size:0.84rem; letter-spacing:0; padding:6px 12px; border:1px solid var(--rule-strong); border-radius:999px; white-space:normal;}
+  footer{padding:56px 0 32px;}
+  .footer-big{padding:16px 0 24px;}
+}
+
+.narrow-left > *{max-width:640px;}
+.narrow-left .feed-url-box{margin:0;}
