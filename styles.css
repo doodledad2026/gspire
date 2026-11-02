@@ -1271,3 +1271,22 @@ section.flush-top{padding-top:0 !important;}
 .stat-tile p{opacity:1;}
 .stat-tile:nth-child(odd) p{color:#2a2418;}
 .stat-tile:nth-child(even) p{color:rgba(241,234,217,0.82);}
+
+/* Contact: direct contact as actions, form as its own card */
+.contact .contact-side-h{font-family:var(--sans); font-size:0.78rem; line-height:1.4; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--slate); margin:36px 0 14px;}
+.contact-actions{display:grid; gap:12px; max-width:440px;}
+.contact-action{display:flex; align-items:center; gap:16px; padding:16px 18px; border:1px solid var(--rule-strong); border-radius:12px; text-decoration:none; color:var(--ink); background:transparent; transition:border-color 0.2s ease, background 0.2s ease;}
+.contact-action:hover{border-color:var(--ink); background:rgba(255,255,255,0.6);}
+.contact-action .ic{width:44px; height:44px; flex-shrink:0; border-radius:50%; background:var(--ink); color:var(--brass-bright); display:flex; align-items:center; justify-content:center;}
+.contact-action .ic svg{width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round;}
+.contact-action small{display:block; font-size:0.78rem; color:var(--slate); margin-bottom:2px;}
+.contact-action strong{font-weight:600; font-size:1.02rem; overflow-wrap:anywhere;}
+.contact-loc{margin-top:18px !important; font-size:0.92rem !important; color:var(--slate);}
+.contact-note{font-size:1.02rem;}
+.contact-card{background:#fff; border-radius:16px; padding:40px; box-shadow:0 1px 2px rgba(20,32,46,0.04), 0 12px 32px rgba(20,32,46,0.08); gap:20px;}
+.contact-card .form-title{font-size:1.6rem; margin:0;}
+.contact-card .form-intro{color:var(--slate); margin:-8px 0 8px; font-size:0.98rem;}
+.contact-card input:not([type="hidden"]), .contact-card textarea{border:1px solid var(--rule-strong); border-radius:8px; padding:12px 14px; background:var(--parchment);}
+.contact-card input:focus, .contact-card textarea:focus{border-color:var(--brass-text); box-shadow:0 0 0 3px rgba(184,146,61,0.18); background:#fff;}
+.contact-card .submit-btn{margin-top:4px;}
+@media (max-width:600px){ .contact-card{padding:26px 20px;} .contact-card .submit-btn{width:100%; justify-content:center;} }
