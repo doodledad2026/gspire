@@ -143,7 +143,7 @@
       <li><a href="../about.html">Background</a></li>
       <li><a href="../industries.html">Who We Serve</a></li>
       <li><a href="../locations.html">Locations</a></li>
-      <li><a href="../blog/index.html" style="color:var(--brass);">Blog</a></li>
+      <li><a href="../blog/index.html" aria-current="page">Blog</a></li>
       <li><a href="../contact.html" class="nav-cta">Get in Touch</a></li>
     </ul>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -152,6 +152,7 @@
   </nav>
   <div class="nav-scrim" id="navScrim"></div>
 </header>
+<main>
 
 <section class="page-header" id="main">
   <div class="wrap post-header">
@@ -173,8 +174,8 @@
     <div class="share-buttons">
       <button class="share-btn" title="Share on LinkedIn" onclick="shareOnLinkedIn()" aria-label="Share on LinkedIn">in</button>
       <button class="share-btn" title="Share on Twitter" onclick="shareOnTwitter()" aria-label="Share on Twitter">𝕏</button>
-      <button class="share-btn" title="Share via Email" onclick="shareViaEmail()" aria-label="Share via Email">✉</button>
-      <button class="share-btn copy-link" title="Copy link" onclick="copyLink()" aria-label="Copy link">🔗</button>
+      <button class="share-btn" title="Share via Email" onclick="shareViaEmail()" aria-label="Share via Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></button>
+      <button class="share-btn copy-link" title="Copy link" onclick="copyLink()" aria-label="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></button>
     </div>
   </div>
 </div>
@@ -209,7 +210,7 @@
 <p>Look at your last ten quotes. How many did you never follow up on? If even one of them would have closed with a phone call, that's real money you already did the work for.</p>
 
 <h2>Get it set up</h2>
-<p>Our <a href="../index.html#packages">Quote Follow-Up Autopilot</a> starts at $300 and is included free with the Never-Miss-a-Lead Setup. See how it worked for <a href="custom-apparel-shop-order-system.html">a local custom apparel shop</a>.</p>
+<p>Our <a href="../index.html#packages">Quote Follow-Up Autopilot</a> is included free with the Never-Miss-a-Lead Setup. See how it worked for <a href="custom-apparel-shop-order-system.html">a local custom apparel shop</a>.</p>
     </div>
     <div class="newsletter-section reveal">
       <h3>Get new posts by email</h3>
@@ -230,6 +231,8 @@
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap">
     <div class="footer-top">
@@ -241,7 +244,7 @@
         <p>Custom AI and automation for growing businesses. Enterprise-grade work, built for your size.</p>
       </div>
       <div class="footer-col">
-        <h4>Work</h4>
+        <p class="footer-h">Work</p>
         <ul>
           <li><a href="../services.html">Services</a></li>
           <li><a href="../solutions.html">Solutions</a></li>
@@ -250,7 +253,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <p class="footer-h">Company</p>
         <ul>
           <li><a href="../about.html">Background</a></li>
           <li><a href="../industries.html">Who we serve</a></li>
@@ -261,7 +264,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
+        <p class="footer-h">Contact</p>
         <ul>
           <li><a href="mailto:info@goldenspiregroup.com">info@goldenspiregroup.com</a></li>
           <li><a href="tel:+17175022056">(717) 502-2056</a></li>

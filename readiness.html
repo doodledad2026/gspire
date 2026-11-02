@@ -111,6 +111,7 @@
   </nav>
   <div class="nav-scrim" id="navScrim"></div>
 </header>
+<main>
 
 <section class="page-header" id="main">
   <div class="wrap">
@@ -167,7 +168,7 @@
           </div>
         </div>
       </div>
-      <div style="text-align:center; margin-top:32px;">
+      <div style="margin-top:32px;">
         <button type="submit" class="btn btn-primary">See my result</button>
       </div>
     </form>
@@ -175,6 +176,8 @@
     <div id="readinessResult" class="quiz-result" style="display:none;"></div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
@@ -187,7 +190,7 @@
         <p>Custom AI and automation for growing businesses. Enterprise-grade work, built for your size.</p>
       </div>
       <div class="footer-col">
-        <h4>Work</h4>
+        <p class="footer-h">Work</p>
         <ul>
           <li><a href="services.html">Services</a></li>
           <li><a href="solutions.html">Solutions</a></li>
@@ -196,7 +199,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <p class="footer-h">Company</p>
         <ul>
           <li><a href="about.html">Background</a></li>
           <li><a href="industries.html">Who we serve</a></li>
@@ -206,7 +209,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
+        <p class="footer-h">Contact</p>
         <ul>
           <li><a href="mailto:info@goldenspiregroup.com">info@goldenspiregroup.com</a></li>
           <li><a href="tel:+17175022056">(717) 502-2056</a></li>
@@ -295,7 +298,7 @@
       // (a process nobody agrees on needs defining before it's automated).
       let problemScore = 0;
       ['q1','q2','q3','q4','q5'].forEach(function(k){ if(answers[k] === 'yes'){ problemScore++; } });
-      const processUndefined = answers.q6 === 'no' && problemScore >= 2;
+      const processUndefined = answers.q6 === 'no' & problemScore >= 2;
       let score = problemScore;
       if(answers.q6 === 'yes'){ score++; }
 

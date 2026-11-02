@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<title>Page Not Found | Goldenspire Group</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header>
+  <nav>
+    <a href="/index.html" class="brand" style="text-decoration:none;">
+      <img src="/logo.png" class="brand-mark" alt="Goldenspire icon" width="22" height="28" style="width:22px; height:auto;">
+      Goldenspire Group
+    </a>
+    <ul>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/approach.html">Approach</a></li>
+      <li><a href="/about.html">Background</a></li>
+      <li><a href="/industries.html">Who We Serve</a></li>
+      <li><a href="/locations.html">Locations</a></li>
+      <li><a href="/case-studies.html">Case Studies</a></li>
+      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/contact.html" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-scrim" id="navScrim"></div>
+</header>
+<main>
+<section class="page-header" id="main">
+  <div class="wrap">
+    <span class="breadcrumb"><a href="/index.html">Home</a> / Page not found</span>
+    <h1>This page has <em>moved or doesn't exist.</em></h1>
+    <p>The link may be out of date, or the address may have a typo. Here are the best places to pick up from.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cap-cards">
+      <a class="cap-card" href="/index.html" style="text-decoration:none; color:inherit;"><h2 style="font-size:1.3rem; margin-bottom:10px;">Home</h2><p>What we build, how it works and what to expect.</p></a>
+      <a class="cap-card" href="/services.html" style="text-decoration:none; color:inherit;"><h2 style="font-size:1.3rem; margin-bottom:10px;">Services</h2><p>Every service and starter package in detail.</p></a>
+      <a class="cap-card" href="/case-studies.html" style="text-decoration:none; color:inherit;"><h2 style="font-size:1.3rem; margin-bottom:10px;">Case studies</h2><p>Recent client projects and the systems behind them.</p></a>
+    </div>
+    <div class="btn-row" style="margin-top:48px;"><a href="/contact.html" class="btn btn-primary">Get in touch</a><a href="/blog/index.html" class="btn btn-ghost">Read the blog</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-intro">
+        <div class="brand">
+          <img src="/logo.png" class="brand-mark" alt="Goldenspire icon" width="26" height="33" style="width:24px; height:auto;">
+          Goldenspire Group
+        </div>
+        <p>Custom AI and automation for growing businesses. Enterprise-grade work, built for your size.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-h">Work</p>
+        <ul>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/solutions.html">Solutions</a></li>
+          <li><a href="/approach.html">Approach</a></li>
+          <li><a href="/readiness.html">Readiness check</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-h">Company</p>
+        <ul>
+          <li><a href="/about.html">Background</a></li>
+          <li><a href="/industries.html">Who we serve</a></li>
+          <li><a href="/locations.html">Locations</a></li>
+          <li><a href="/case-studies.html">Case studies</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-h">Contact</p>
+        <ul>
+          <li><a href="mailto:info@goldenspiregroup.com">info@goldenspiregroup.com</a></li>
+          <li><a href="tel:+17175022056">(717) 502-2056</a></li>
+          <li>Dillsburg, PA</li>
+          <li><a href="/contact.html">Book a consultation →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-big" aria-hidden="true">Golden<em>spire</em></div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Goldenspire Group &middot; Dillsburg, PA</span>
+      <span><a href="/privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  // Mobile menu toggle
+  (function(){
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.querySelector('nav ul');
+    const scrim = document.getElementById('navScrim');
+    function closeMenu(){
+      toggle.classList.remove('open');
+      menu.classList.remove('open');
+      scrim.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+    }
+    function openMenu(){
+      toggle.classList.add('open');
+      menu.classList.add('open');
+      scrim.classList.add('open');
+      toggle.setAttribute('aria-expanded','true');
+    }
+    toggle.addEventListener('click', function(){
+      menu.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    scrim.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', closeMenu);
+    });
+  })();
+
+  // Header shadow on scroll
+  (function(){
+    const header = document.querySelector('header');
+    function onScroll(){
+      if(window.scrollY > 8){ header.classList.add('scrolled'); }
+      else { header.classList.remove('scrolled'); }
+    }
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+  })();
+
+  // Scroll-reveal
+  (function(){
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const targets = document.querySelectorAll('.reveal, .reveal-stagger');
+    if(reduced || !('IntersectionObserver' in window)){
+      targets.forEach(function(el){ el.classList.add('in-view'); });
+      return;
+    }
+    const io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0, rootMargin:'0px 0px -40px 0px'});
+    targets.forEach(function(el){ io.observe(el); });
+  })();
+
+</script>
+
+</body>
+</html>

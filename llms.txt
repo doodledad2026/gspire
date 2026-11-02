@@ -15,19 +15,20 @@
 - [Solutions](https://goldenspiregroup.com/solutions.html): Hub page linking to a dedicated write-up for each of the 8 systems Goldenspire builds (customer intake, scheduling/dispatch, CRM/sales pipeline, document/underwriting automation, reporting dashboards, reputation/referral, revenue/cash flow, competitive intelligence).
 - [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Harrisburg, Lancaster, Gettysburg, Hanover, Chambersburg, Hershey, New Cumberland, Shippensburg), plus remote clients nationwide.
 
-## Starter packages (fixed prices)
+## Starter packages (fixed scope, quoted after a free consultation)
 
-- Never-Miss-a-Lead Setup: order, request and quote forms with instant customer confirmation, owner alerts, one tracker and rush flags. From $500 one-time, live in about a week.
-- Quote Follow-Up Autopilot: automatic day 3 and day 7 reminders on unanswered quotes. From $300, included with the Never-Miss-a-Lead Setup.
-- Missed-Call Text-Back: an instant text to missed callers with a link to a request form. From $300 one-time, works with the client's business phone plan.
-- Review & Google Profile Booster: automatic review requests after each job plus Google Business Profile cleanup. From $250 one-time, optional upkeep from $35/month.
-- Also available: booking and reminders from $250, local prospect lists from $150, websites from $1,500, ads setup from $300, monthly check-up plan from $35/month.
-- Terms: 50% deposit, balance due after agreed acceptance tests pass, deposit refunded if they cannot pass, 30 days of free fixes, client owns everything. Referral rewards: 30 more days of free fixes or $50 off the next project per referred client, stackable.
+- Never-Miss-a-Lead Setup: order, request and quote forms with instant customer confirmation, owner alerts, one tracker and rush flags. Live in about a week.
+- Quote Follow-Up Autopilot: automatic day 3 and day 7 reminders on unanswered quotes. Included with the Never-Miss-a-Lead Setup.
+- Missed-Call Text-Back: an instant text to missed callers with a link to a request form. Works with the client's business phone plan.
+- Review & Google Profile Booster: automatic review requests after each job plus Google Business Profile cleanup. Optional monthly upkeep.
+- Also available: booking and reminders, local prospect lists, websites and refreshes, ads setup, and a monthly check-up plan.
+- Terms: 50% deposit, balance due after agreed acceptance tests pass, deposit refunded if they cannot pass, 30 days of free fixes, client owns everything. Referral rewards: 30 more days of free fixes or a discount on the next project per referred client, stackable.
 
 ## Recent blog posts
 
 - [Missed-Call Text-Back: How South Central PA Contractors Stop Losing Jobs to Voicemail](https://goldenspiregroup.com/blog/missed-call-text-back-contractors-pa.html): When a contractor can't answer, callers move on fast. Here's how an automatic text-back keeps the job, what it costs, and how to set it up.
-- [Case Studies](https://goldenspiregroup.com/case-studies.html): Client projects, including Focus Pest Control (Dillsburg, PA) and a custom apparel shop in South Central PA.
+- [Case Studies](https://goldenspiregroup.com/case-studies.html): Client projects, including Focus Pest Control (Dillsburg, PA), an esthetician studio in Mechanicsburg and a custom apparel shop in Jonestown, PA.
+- [An Esthetician Studio in Mechanicsburg: A Website Built to Book Appointments](https://goldenspiregroup.com/blog/esthetician-studio-website.html): Client story. A complete website for an esthetician studio in Mechanicsburg, PA, with online booking, gift cards, reviews and easy contact.
 - [Focus Pest Control: A New Website Built to Bring In Local Calls](https://goldenspiregroup.com/blog/focus-pest-control-new-website.html): Client story. A new website for a Dillsburg pest control company, with clearer navigation, easier contact and local SEO.
 - [How Custom T-Shirt and Print Shops Stop Losing Orders in Text Messages](https://goldenspiregroup.com/blog/custom-apparel-shop-order-system.html): Custom apparel orders scattered across texts and DMs lead to missed details and quotes that go quiet. Here's the simple system that fixes it.
 - [How to Get More Google Reviews for Your Local Business (Without Awkward Asking)](https://goldenspiregroup.com/blog/get-more-google-reviews-local-business.html): Customers now look for recent reviews and higher star ratings before they call. Here's a simple, automatic way for local businesses to keep reviews coming in.
