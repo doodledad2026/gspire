@@ -1156,7 +1156,7 @@ section.flush-top{padding-top:0 !important;}
 .hero-split h1{color:var(--ink); font-size:clamp(2.6rem, 4.6vw, 4rem); line-height:1.02; letter-spacing:-0.04em; margin:0;}
 .hero-split h1 em{color:var(--brass-text);}
 .hero-split .lede{color:var(--slate) !important; font-size:1.2rem; line-height:1.6; margin:0 0 32px !important; max-width:none;}
-.hero-split .hero-side{padding-top:92px;}
+.hero-split .hero-side{padding-top:10px;}
 .hero-split .btn-ghost{border-color:var(--rule-strong) !important; color:var(--ink) !important;}
 @media (max-width:860px){
   .hero.hero-split{padding:48px 0 56px;}
