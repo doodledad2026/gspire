@@ -1014,11 +1014,11 @@ footer a:hover{color:var(--parchment);}
 @media (max-width:520px){ .finding{grid-template-columns:1fr; gap:10px;} }
 
 /* Story cards */
-.story-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:24px;}
+.story-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px 32px;}
 @media (max-width:900px){ .story-grid{grid-template-columns:1fr;} }
 .story-card{display:flex; flex-direction:column; text-decoration:none; color:inherit;}
-.story-card .ph{aspect-ratio:4/3; border-radius:16px; overflow:hidden; background:var(--parchment-2);}
-.story-card:first-child .ph{aspect-ratio:auto; flex:1; min-height:320px;}
+.story-card .ph{aspect-ratio:16/10; border-radius:16px; overflow:hidden; background:var(--parchment-2);}
+.story-card h3{max-width:30ch;}
 .story-card .ph img{width:100%; height:100%; object-fit:cover; transition:transform 1.2s var(--ease);}
 .story-card:hover .ph img{transform:scale(1.04);}
 .tags{display:flex; flex-wrap:wrap; gap:6px; margin:20px 0 12px;}
