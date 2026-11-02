@@ -1046,3 +1046,12 @@ footer a:hover{color:var(--parchment);}
 .big-cta h2{font-size:clamp(3rem, 9vw, 7.5rem); line-height:0.95; letter-spacing:-0.055em;}
 .big-cta + .contact{padding-top:72px;}
 @media (max-width:800px){ .framework-grid{grid-template-columns:1fr !important;} }
+
+/* Client logos */
+.story-card .ph{position:relative;}
+.client-badge{position:absolute; left:16px; bottom:16px; background:#fff; border-radius:10px; padding:8px 12px; box-shadow:0 6px 20px rgba(20,32,46,0.18);}
+.story-card .ph .client-badge img{width:120px; height:auto; display:block; transform:none !important;}
+.client-panel{margin:0 0 40px; padding:28px; background:#fff; border:1px solid var(--rule); border-radius:12px; text-align:center;}
+.client-panel img{width:100%; max-width:360px; height:auto; margin:0 auto 18px;}
+.client-panel figcaption{font-size:0.9rem; color:var(--slate); line-height:1.6;}
+.client-panel figcaption a{color:var(--ink);}
