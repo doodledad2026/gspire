@@ -180,7 +180,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     "name": "Goldenspire Group",
     "url": "https://goldenspiregroup.com",
     "telephone": "+17175022056",
-    "email": "info@goldenspiregroup.com",
+    "email": "GoldenspireGroup@gmail.com",
     "address": {{
       "@type": "PostalAddress",
       "addressLocality": "Dillsburg",
@@ -486,7 +486,7 @@ HUB_TEMPLATE = """<!DOCTYPE html>
   "name": "Goldenspire Group",
   "url": "https://goldenspiregroup.com",
   "telephone": "+17175022056",
-  "email": "info@goldenspiregroup.com",
+  "email": "GoldenspireGroup@gmail.com",
   "logo": "https://goldenspiregroup.com/logo.png",
   "address": {
     "@type": "PostalAddress",
