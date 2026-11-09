@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # WARNING: the location pages were redesigned by hand after this script was written
-# (new navigation, footer, layout and copy). Re-running it will overwrite
+# (new navigation, footer, layout and copy). The office moved to Harrisburg in
+# November 2026 (city data below is updated; the templates still assume Dillsburg).
+# Re-running it will overwrite
 # locations/*.html with the older templates below. Update the templates first.
 """One-off generator for the /locations/ city pages. Run from repo root."""
 import os
@@ -12,8 +14,8 @@ CITIES = [
         "slug": "dillsburg",
         "name": "Dillsburg",
         "county": "York County",
-        "minutes": None,  # HQ
-        "character": "Dillsburg is a small borough on the York/Cumberland County line, and it's where Goldenspire is actually based, not a satellite office or a mailing address. Most of the small businesses here run on the same handful of tools: a phone that doesn't stop, a shared inbox, and a calendar someone has to keep updated by hand.",
+        "minutes": "30 minutes",
+        "character": "Dillsburg is a small borough on the York/Cumberland County line, about 30 minutes from Goldenspire's Harrisburg office. Most of the small businesses here run on the same handful of tools: a phone that doesn't stop, a shared inbox, and a calendar someone has to keep updated by hand.",
         "industries": ["construction", "landscaping", "auto-services", "retail"],
         "lat": 40.1223, "lng": -77.0355,
     },
@@ -21,7 +23,7 @@ CITIES = [
         "slug": "mechanicsburg",
         "name": "Mechanicsburg",
         "county": "Cumberland County",
-        "minutes": "15 minutes",
+        "minutes": "20 minutes",
         "character": "Mechanicsburg sits in the middle of Cumberland County's logistics and distribution corridor, with a strong base of professional services and small manufacturers alongside it. Businesses here tend to juggle more moving parts, more vendors, more scheduling, than their headcount would suggest.",
         "industries": ["manufacturing", "professional-services", "financial-services", "insurance"],
         "lat": 40.2126, "lng": -77.0083,
@@ -30,7 +32,7 @@ CITIES = [
         "slug": "carlisle",
         "name": "Carlisle",
         "county": "Cumberland County",
-        "minutes": "20–25 minutes",
+        "minutes": "30 minutes",
         "character": "Carlisle is the Cumberland County seat, home to Dickinson College and the U.S. Army War College, with a mix of manufacturing, logistics along the I-81 corridor, and a busy small-business downtown. That mix means a wide range of intake and scheduling problems, from retail foot traffic to B2B quote requests.",
         "industries": ["manufacturing", "retail", "professional-services", "auto-services"],
         "lat": 40.2011, "lng": -77.1861,
@@ -39,7 +41,7 @@ CITIES = [
         "slug": "camp-hill",
         "name": "Camp Hill",
         "county": "Cumberland County",
-        "minutes": "20 minutes",
+        "minutes": "15 minutes",
         "character": "Camp Hill sits just across the Susquehanna from Harrisburg, with a dense concentration of professional services, healthcare-adjacent businesses, and retail. It's a market where a business's phone and web presence are often the whole first impression, since so much of the competition is a short drive away.",
         "industries": ["professional-services", "financial-services", "retail", "salons"],
         "lat": 40.2337, "lng": -76.9214,
@@ -48,7 +50,7 @@ CITIES = [
         "slug": "york",
         "name": "York",
         "county": "York County",
-        "minutes": "25–30 minutes",
+        "minutes": "35–40 minutes",
         "character": "York is the York County seat and a historic manufacturing city that's been steadily rebuilding its downtown around small business, professional services, and skilled trades. A lot of the businesses here inherited processes built for a different era and are now trying to modernize without ripping everything out.",
         "industries": ["manufacturing", "construction", "hvac", "law-firms"],
         "lat": 39.9626, "lng": -76.7277,
@@ -57,7 +59,7 @@ CITIES = [
         "slug": "harrisburg",
         "name": "Harrisburg",
         "county": "Dauphin County",
-        "minutes": "25–30 minutes",
+        "minutes": None,  # HQ (2040 Linglestown Road, Suite 109)
         "character": "As Pennsylvania's state capital, Harrisburg has an outsized concentration of law firms, insurance agencies, financial services, and other professional practices, alongside the small businesses that serve that workforce. Intake and follow-up speed matters more here, since clients and prospects usually have several comparable firms to choose from.",
         "industries": ["law-firms", "insurance", "financial-services", "business-brokers"],
         "lat": 40.2732, "lng": -76.8867,
@@ -66,8 +68,8 @@ CITIES = [
         "slug": "lancaster",
         "name": "Lancaster",
         "county": "Lancaster County",
-        "minutes": "50 minutes",
-        "character": "Lancaster's economy runs on agriculture, tourism, and a fast-growing base of retail and professional services downtown. It's the furthest of these markets from Dillsburg, which is exactly why most of the engagement happens remotely, on a screen-share, the same way it would for a client in another state.",
+        "minutes": "45 minutes",
+        "character": "Lancaster's economy runs on agriculture, tourism, and a fast-growing base of retail and professional services downtown. It's one of the furthest of these markets from Harrisburg, which is exactly why most of the engagement happens remotely, on a screen-share, the same way it would for a client in another state.",
         "industries": ["retail", "real-estate", "professional-services", "architecture"],
         "lat": 40.0379, "lng": -76.3055,
     },
@@ -75,7 +77,7 @@ CITIES = [
         "slug": "gettysburg",
         "name": "Gettysburg",
         "county": "Adams County",
-        "minutes": "35 minutes",
+        "minutes": "an hour",
         "character": "Gettysburg is the Adams County seat and one of Pennsylvania's busiest tourism towns, with visitors spending more than $800 million a year across the county. That feeds restaurants, lodging, gift and apparel shops, wineries, orchards and event venues, most of them owner-run and juggling bookings, group orders and inquiries by phone and Facebook.",
         "industries": ["retail", "construction", "landscaping", "auto-services"],
         "lat": 39.8309, "lng": -77.2311,
@@ -84,7 +86,7 @@ CITIES = [
         "slug": "hanover",
         "name": "Hanover",
         "county": "York County",
-        "minutes": "35–40 minutes",
+        "minutes": "50 minutes",
         "character": "Hanover sits on the York and Adams County line near the Maryland border, with a long manufacturing history and a busy base of contractors, custom print and apparel shops, auto services and retail. Many of these businesses run on a phone that rings while the owner is on the shop floor or a job site.",
         "industries": ["manufacturing", "construction", "retail", "auto-services"],
         "lat": 39.8007, "lng": -76.9830,
@@ -93,7 +95,7 @@ CITIES = [
         "slug": "chambersburg",
         "name": "Chambersburg",
         "county": "Franklin County",
-        "minutes": "45 minutes",
+        "minutes": "an hour",
         "character": "Chambersburg is the Franklin County seat along the I-81 corridor, with manufacturing, distribution, agriculture and a strong base of trades, salons and local retail. It's a market where word of mouth still drives business, so a fast reply and a strong set of recent reviews make a real difference.",
         "industries": ["manufacturing", "hvac", "salons", "retail"],
         "lat": 39.9376, "lng": -77.6611,
@@ -102,7 +104,7 @@ CITIES = [
         "slug": "hershey",
         "name": "Hershey",
         "county": "Dauphin County",
-        "minutes": "40 minutes",
+        "minutes": "20 minutes",
         "character": "Hershey anchors eastern Dauphin County with tourism, hospitality, a major medical center and the shops, restaurants, contractors and service businesses that support them. Seasonal visitor traffic means bookings, inquiries and reviews pile up fast, often faster than a small team can answer.",
         "industries": ["retail", "salons", "professional-services", "construction"],
         "lat": 40.2859, "lng": -76.6502,
@@ -111,7 +113,7 @@ CITIES = [
         "slug": "new-cumberland",
         "name": "New Cumberland",
         "county": "Cumberland County",
-        "minutes": "20 minutes",
+        "minutes": "15–20 minutes",
         "character": "New Cumberland sits on the West Shore along the Susquehanna, a short drive from Harrisburg, with a tight-knit mix of local shops, restaurants, contractors and professional offices. Most are owner-run, so the phone, the inbox and the quote follow-ups all land on the same person.",
         "industries": ["construction", "retail", "professional-services", "hvac"],
         "lat": 40.2318, "lng": -76.8786,
@@ -120,14 +122,14 @@ CITIES = [
         "slug": "shippensburg",
         "name": "Shippensburg",
         "county": "Cumberland County",
-        "minutes": "40 minutes",
+        "minutes": "45 minutes",
         "character": "Shippensburg straddles the Cumberland and Franklin County line along I-81, home to Shippensburg University, distribution centers, farms and a main street of local shops and trades. Many businesses here serve both the college crowd and longtime local customers, and both expect a fast reply.",
         "industries": ["retail", "manufacturing", "auto-services", "landscaping"],
         "lat": 40.0509, "lng": -77.5203,
     },
 ]
 
-LOCATION_TEASERS = {'dillsburg': 'Home base. Small-town main street businesses, contractors, and shops running on phone calls and paper.', 'mechanicsburg': 'Cumberland County logistics and distribution corridor, with a growing base of professional services.', 'carlisle': 'County seat with a manufacturing, logistics, and college-town retail mix along the I-81 corridor.', 'camp-hill': 'Dense professional-services and healthcare-adjacent market just across the river from Harrisburg.', 'york': 'Historic manufacturing city rebuilding its downtown around small business and skilled trades.', 'harrisburg': 'State capital with a heavy concentration of law, insurance, and financial-services firms.', 'lancaster': 'Agriculture, tourism, and a fast-growing downtown retail and professional-services scene.', 'gettysburg': 'Tourism, lodging, wineries and owner-run shops taking bookings and group orders by phone and Facebook.', 'hanover': 'Manufacturing, contractors and custom print shops on the York and Adams County line.', 'chambersburg': 'Franklin County seat on I-81 with trades, salons, retail and agriculture.', 'hershey': 'Tourism, hospitality and healthcare in eastern Dauphin County, with busy local shops and services.', 'new-cumberland': 'West Shore borough of owner-run shops, contractors and professional offices near Harrisburg.', 'shippensburg': 'College town on I-81 with distribution, farms, trades and main street shops.'}
+LOCATION_TEASERS = {'dillsburg': 'Small-town main street businesses, contractors, and shops running on phone calls and paper.', 'mechanicsburg': 'Cumberland County logistics and distribution corridor, with a growing base of professional services.', 'carlisle': 'County seat with a manufacturing, logistics, and college-town retail mix along the I-81 corridor.', 'camp-hill': 'Dense professional-services and healthcare-adjacent market just across the river from Harrisburg.', 'york': 'Historic manufacturing city rebuilding its downtown around small business and skilled trades.', 'harrisburg': 'Home base, with our office on Linglestown Road. State capital with a heavy concentration of law, insurance, and financial-services firms.', 'lancaster': 'Agriculture, tourism, and a fast-growing downtown retail and professional-services scene.', 'gettysburg': 'Tourism, lodging, wineries and owner-run shops taking bookings and group orders by phone and Facebook.', 'hanover': 'Manufacturing, contractors and custom print shops on the York and Adams County line.', 'chambersburg': 'Franklin County seat on I-81 with trades, salons, retail and agriculture.', 'hershey': 'Tourism, hospitality and healthcare in eastern Dauphin County, with busy local shops and services.', 'new-cumberland': 'West Shore borough of owner-run shops, contractors and professional offices near Harrisburg.', 'shippensburg': 'College town on I-81 with distribution, farms, trades and main street shops.'}
 
 INDUSTRY_LABELS = {
     "real-estate": "Real Estate",

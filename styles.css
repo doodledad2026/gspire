@@ -755,6 +755,7 @@ footer .brand{color:var(--parchment); margin-bottom:16px;}
 .footer-col h4, .footer-col .footer-h{font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:var(--brass-bright); margin-bottom:18px; font-weight:600;}
 .footer-col ul{list-style:none;}
 .footer-col li{margin-bottom:10px;}
+.footer-nap{font-style:normal; line-height:1.5;}
 footer a{color:rgba(241,234,217,0.75); text-decoration:none; transition:color 0.2s ease;}
 footer a:hover{color:var(--parchment);}
 .footer-big{

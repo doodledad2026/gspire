@@ -1,6 +1,6 @@
 # Goldenspire Group
 
-> AI-powered automation and business systems consulting. Goldenspire Group designs, builds, and manages custom automation for growing businesses: customer intake and follow-up, scheduling and dispatch, document and data handling, sales and CRM automation, reporting, payments, and website/lead generation systems. Based in Dillsburg, Pennsylvania (South Central PA), working with clients locally and remotely across the United States. Founded by Sean, a full-time AI consulting and innovation professional who has built production systems for global companies.
+> AI-powered automation and business systems consulting. Goldenspire Group designs, builds, and manages custom automation for growing businesses: customer intake and follow-up, scheduling and dispatch, document and data handling, sales and CRM automation, reporting, payments, and website/lead generation systems. Based in Harrisburg, Pennsylvania (2040 Linglestown Road, Suite 109, Harrisburg, PA 17110), working with clients across Central PA and remotely. Founded by Sean Gelchion, a full-time AI consulting and innovation professional who has built production systems for global companies.
 
 ## Core pages
 
@@ -13,7 +13,7 @@
 - [Readiness Check](https://goldenspiregroup.com/readiness.html): A free, instant self-assessment for whether a business is ready for automation.
 - [Blog](https://goldenspiregroup.com/blog/index.html): Practical writing on business automation, AI systems, and running a business that doesn't depend entirely on the owner. Includes posts on automation readiness, the cost of missed calls, the two engagement models, CRM effectiveness, the real vs. self-reported AI adoption gap among small businesses (citing SBA Office of Advocacy/Census Bureau data), and the cost of not having a strong website (citing Clutch and BrightLocal research).
 - [Solutions](https://goldenspiregroup.com/solutions.html): Hub page linking to a dedicated write-up for each of the 8 systems Goldenspire builds (customer intake, scheduling/dispatch, CRM/sales pipeline, document/underwriting automation, reporting dashboards, reputation/referral, revenue/cash flow, competitive intelligence).
-- [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Harrisburg, Lancaster, Gettysburg, Hanover, Chambersburg, Hershey, New Cumberland, Shippensburg), plus remote clients nationwide.
+- [Locations](https://goldenspiregroup.com/locations.html): Hub page linking to a dedicated page for each South Central PA market served (Harrisburg, Dillsburg, Mechanicsburg, Carlisle, Camp Hill, York, Lancaster, Gettysburg, Hanover, Chambersburg, Hershey, New Cumberland, Shippensburg), plus remote clients nationwide.
 
 ## Starter packages (fixed scope, quoted after a free consultation)
 
@@ -58,12 +58,12 @@ Each page below covers the specific problems, approach, and typical impact for t
 
 Each page below covers what that market's business landscape looks like and which industries are most common there:
 
-- [Dillsburg, PA](https://goldenspiregroup.com/locations/dillsburg.html) (York County) &mdash; home base
+- [Harrisburg, PA](https://goldenspiregroup.com/locations/harrisburg.html) (Dauphin County) &mdash; home base
+- [Dillsburg, PA](https://goldenspiregroup.com/locations/dillsburg.html) (York County)
 - [Mechanicsburg, PA](https://goldenspiregroup.com/locations/mechanicsburg.html) (Cumberland County)
 - [Carlisle, PA](https://goldenspiregroup.com/locations/carlisle.html) (Cumberland County)
 - [Camp Hill, PA](https://goldenspiregroup.com/locations/camp-hill.html) (Cumberland County)
 - [York, PA](https://goldenspiregroup.com/locations/york.html) (York County)
-- [Harrisburg, PA](https://goldenspiregroup.com/locations/harrisburg.html) (Dauphin County)
 - [Lancaster, PA](https://goldenspiregroup.com/locations/lancaster.html) (Lancaster County)
 - [Gettysburg, PA](https://goldenspiregroup.com/locations/gettysburg.html) (Adams County)
 - [Hanover, PA](https://goldenspiregroup.com/locations/hanover.html) (York County)
@@ -74,8 +74,13 @@ Each page below covers what that market's business landscape looks like and whic
 
 ## Key facts
 
-- Location: Dillsburg, Pennsylvania, South Central PA. Serves Cumberland, York, Dauphin, and Lancaster Counties in person, plus remote clients nationwide.
-- Contact: GoldenspireGroup@gmail.com, (717) 502-2056.
+- Name: Goldenspire Group
+- Address: 2040 Linglestown Road, Suite 109, Harrisburg, PA 17110
+- Phone: (717) 502-2056
+- Email: GoldenspireGroup@gmail.com
+- Website: https://goldenspiregroup.com
+- Owner: Sean Gelchion
+- Service area: Harrisburg, Camp Hill, Mechanicsburg, Hershey, Hummelstown, Carlisle, Dillsburg, Lancaster, York. Remote clients welcome.
 - Engagement models: Build & Handover (client owns and runs the finished system) or Build & Monitor (ongoing monitoring and updates for a monthly fee).
 - Every build includes a 30-day warranty, runs on client-owned accounts, and has no long-term contract requirement.
 - Not limited to small local businesses: the same production standard applies regardless of client size or location.
