@@ -1,6 +1,6 @@
 # Goldenspire Group
 
-> AI-powered automation and business systems consulting. Goldenspire Group designs, builds, and manages custom automation for growing businesses: customer intake and follow-up, scheduling and dispatch, document and data handling, sales and CRM automation, reporting, payments, and website/lead generation systems. Based in Harrisburg, Pennsylvania (2040 Linglestown Road, Suite 109, Harrisburg, PA 17110), working with clients across Central PA and remotely. Founded by Sean Gelchion, a full-time AI consulting and innovation professional who has built production systems for global companies.
+> AI-powered automation and business systems consulting. Goldenspire Group designs, builds, and manages custom automation for growing businesses: customer intake and follow-up, scheduling and dispatch, document and data handling, sales and CRM automation, reporting, payments, and website/lead generation systems. Based in Harrisburg, Pennsylvania, working with clients across Central PA and remotely. Founded by Sean, a full-time AI consulting and innovation professional who has built production systems for global companies.
 
 ## Core pages
 
@@ -75,11 +75,10 @@ Each page below covers what that market's business landscape looks like and whic
 ## Key facts
 
 - Name: Goldenspire Group
-- Address: 2040 Linglestown Road, Suite 109, Harrisburg, PA 17110
+- Location: Harrisburg, PA
 - Phone: (717) 502-2056
 - Email: GoldenspireGroup@gmail.com
 - Website: https://goldenspiregroup.com
-- Owner: Sean Gelchion
 - Service area: Harrisburg, Camp Hill, Mechanicsburg, Hershey, Hummelstown, Carlisle, Dillsburg, Lancaster, York. Remote clients welcome.
 - Engagement models: Build & Handover (client owns and runs the finished system) or Build & Monitor (ongoing monitoring and updates for a monthly fee).
 - Every build includes a 30-day warranty, runs on client-owned accounts, and has no long-term contract requirement.
