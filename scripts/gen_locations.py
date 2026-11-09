@@ -305,7 +305,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <div class="section-head reveal">
       <span class="mono">Local, But Not Local-Only</span>
       <h2>Based in Dillsburg. Built to work the same way everywhere.</h2>
-      <p>Sean works out of Dillsburg, PA and is glad to meet {name} clients face-to-face when it's useful, but the systems themselves don't care about distance. Every build runs on accounts you own, gets tested the same way, and is supported the same way, whether the client is fifteen minutes away or in another state entirely.</p>
+      <p>Goldenspire works out of Dillsburg, PA and is glad to meet {name} clients face-to-face when it's useful, but the systems themselves don't care about distance. Every build runs on accounts you own, gets tested the same way, and is supported the same way, whether the client is fifteen minutes away or in another state entirely.</p>
     </div>
   </div>
 </section>
@@ -425,13 +425,13 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 
 def hero_sentence(c):
     if c["minutes"] is None:
-        return "Dillsburg is home base &mdash; Sean works out of Dillsburg every day."
+        return "Dillsburg is home base &mdash; Goldenspire works out of Dillsburg every day."
     return f"{c['name']} is about {c['minutes']} from Dillsburg."
 
 def faq_presence_answer(c):
     if c["minutes"] is None:
-        return "Yes, Dillsburg is where Sean and Goldenspire are actually based, not a satellite market. Most of the engagement still happens remotely or by screen-share, the same way it would for any other client."
-    return (f"Yes. Sean is based in Dillsburg, PA, about {c['minutes']} from {c['name']}. "
+        return "Yes, Dillsburg is where Goldenspire is actually based, not a satellite market. Most of the engagement still happens remotely or by screen-share, the same way it would for any other client."
+    return (f"Yes. Goldenspire is based in Dillsburg, PA, about {c['minutes']} from {c['name']}. "
             "Most of the engagement happens remotely regardless of distance, the same way it would for a client anywhere else.")
 
 os.makedirs(os.path.join(ROOT, "locations"), exist_ok=True)
@@ -527,7 +527,7 @@ HUB_TEMPLATE = """<!DOCTYPE html>
     {
       "@type": "Question",
       "name": "Do I need to be near Dillsburg to work with Goldenspire?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. Sean is based in Dillsburg, PA and enjoys meeting nearby clients face-to-face, but the systems run identically whether you're fifteen minutes away or working with us entirely remotely." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Goldenspire is based in Dillsburg, PA and enjoys meeting nearby clients face-to-face, but the systems run identically whether you're fifteen minutes away or working with us entirely remotely." }
     }
   ]
 }
@@ -567,7 +567,7 @@ HUB_TEMPLATE = """<!DOCTYPE html>
   <div class="wrap">
     <span class="breadcrumb"><a href="index.html">Home</a> / Locations</span>
     <h1>Based in Dillsburg, PA. Working across South Central PA and beyond.</h1>
-    <p>Sean works out of Dillsburg every day, and Goldenspire is glad to meet clients face-to-face across Cumberland, York, Dauphin, and Lancaster Counties. Most of the work happens remotely regardless of distance, so a client five minutes away and a client five states away get the same build. Click any location below for what we see most often in that market.</p>
+    <p>Goldenspire works out of Dillsburg every day, and Goldenspire is glad to meet clients face-to-face across Cumberland, York, Dauphin, and Lancaster Counties. Most of the work happens remotely regardless of distance, so a client five minutes away and a client five states away get the same build. Click any location below for what we see most often in that market.</p>
   </div>
 </section>
 
@@ -593,7 +593,7 @@ HUB_TEMPLATE = """<!DOCTYPE html>
   <div class="photo-break-content">
     <span class="mono">Local Roots, Not a Local Ceiling</span>
     <p>"Being based in Dillsburg means I know what a Main Street business actually deals with. It doesn't mean that's the only kind of business we build for."</p>
-    <div class="attribution">Sean, Goldenspire Group</div>
+    <div class="attribution">Goldenspire Group</div>
   </div>
 </section>
 
@@ -610,7 +610,7 @@ HUB_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="service-card" style="text-align:left;">
         <h3 style="margin-bottom:8px;">Do I need to be near Dillsburg to work with Goldenspire?</h3>
-        <p style="color:var(--slate); font-size:0.92rem;">No. Sean is based in Dillsburg, PA and enjoys meeting nearby clients face-to-face, but the systems run identically whether you're fifteen minutes away or working with us entirely remotely.</p>
+        <p style="color:var(--slate); font-size:0.92rem;">No. Goldenspire is based in Dillsburg, PA and enjoys meeting nearby clients face-to-face, but the systems run identically whether you're fifteen minutes away or working with us entirely remotely.</p>
       </div>
     </div>
   </div>

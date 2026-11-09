@@ -1,6 +1,6 @@
 # Goldenspire Group
 
-> AI-powered automation and business systems consulting. Goldenspire Group designs, builds, and manages custom automation for growing businesses: customer intake and follow-up, scheduling and dispatch, document and data handling, sales and CRM automation, reporting, payments, and website/lead generation systems. Based in Harrisburg, Pennsylvania, working with clients across Central PA and remotely. Founded by Sean, a full-time AI consulting and innovation professional who has built production systems for global companies.
+> AI-powered automation and business systems consulting. Goldenspire Group designs, builds, and manages custom automation for growing businesses: customer intake and follow-up, scheduling and dispatch, document and data handling, sales and CRM automation, reporting, payments, and website/lead generation systems. Based in Harrisburg, Pennsylvania, working with clients across Central PA and remotely. Founded by a full-time AI consulting and innovation professional who has built production systems for global companies.
 
 ## Core pages
 
@@ -8,7 +8,7 @@
 - [Services](https://goldenspiregroup.com/services.html): The 11 core services offered (customer intake, scheduling, website design, lead generation, document handling, CRM automation, marketing follow-up, reviews, reporting, payments/invoicing, vendor due diligence), plus a visual gallery of example outputs.
 - [Who We Serve](https://goldenspiregroup.com/industries.html): Hub page linking to a dedicated breakdown for each industry served (problems, approach, and typical impact).
 - [Approach](https://goldenspiregroup.com/approach.html): The build methodology, the two engagement models (Build & Handover, Build & Monitor), and what to expect during a project.
-- [Background](https://goldenspiregroup.com/about.html): Who Sean is, his professional AI consulting background, and why Goldenspire Group exists.
+- [Background](https://goldenspiregroup.com/about.html): The owner's professional AI consulting background, and why Goldenspire Group exists.
 - [Contact](https://goldenspiregroup.com/contact.html): How to reach out for a free, no-pitch consultation.
 - [Readiness Check](https://goldenspiregroup.com/readiness.html): A free, instant self-assessment for whether a business is ready for automation.
 - [Blog](https://goldenspiregroup.com/blog/index.html): Practical writing on business automation, AI systems, and running a business that doesn't depend entirely on the owner. Includes posts on automation readiness, the cost of missed calls, the two engagement models, CRM effectiveness, the real vs. self-reported AI adoption gap among small businesses (citing SBA Office of Advocacy/Census Bureau data), and the cost of not having a strong website (citing Clutch and BrightLocal research).
