@@ -1,11 +1,11 @@
 # Goldenspire Group
 
-> AI-powered automation and business systems consulting. Goldenspire Group designs, builds, and manages custom automation for growing businesses: customer intake and follow-up, scheduling and dispatch, document and data handling, sales and CRM automation, reporting, payments, and website/lead generation systems. Based in Dillsburg, Pennsylvania (South Central PA), working with clients locally and remotely across the United States. Founded by Sean, a full-time AI consulting and innovation professional who has built production systems for global companies.
+> AI-powered automation and business systems consulting. Goldenspire Group designs, builds, and manages custom automation for growing businesses: customer intake and follow-up, scheduling and dispatch, document and data handling, sales and CRM automation, reporting, payments, and website/lead generation systems. Also offers AI policy consulting (which AI tools and features are approved, what information can go into them, and how new tools are reviewed) and workflow consulting (mapping how work moves through a business and planning what to change or automate). Based in Dillsburg, Pennsylvania (South Central PA), working with clients locally and remotely across the United States. Founded by Sean, a full-time AI consulting and innovation professional who has built production systems for global companies.
 
 ## Core pages
 
 - [Home](https://goldenspiregroup.com/index.html): Overview of what Goldenspire Group builds, who it's for, and why the business exists.
-- [Services](https://goldenspiregroup.com/services.html): The 11 core services offered (customer intake, scheduling, website design, lead generation, document handling, CRM automation, marketing follow-up, reviews, reporting, payments/invoicing, vendor due diligence), plus a visual gallery of example outputs.
+- [Services](https://goldenspiregroup.com/services.html): The 13 services offered (customer intake, scheduling, website design, lead generation, document handling, CRM automation, marketing follow-up, reviews, reporting, payments/invoicing, vendor due diligence, AI policy consulting, workflow consulting), plus a visual gallery of example outputs.
 - [Who We Serve](https://goldenspiregroup.com/industries.html): Hub page linking to a dedicated breakdown for each industry served (problems, approach, and typical impact).
 - [Approach](https://goldenspiregroup.com/approach.html): The build methodology, the two engagement models (Build & Handover, Build & Monitor), and what to expect during a project.
 - [Background](https://goldenspiregroup.com/about.html): Who Sean is, his professional AI consulting background, and why Goldenspire Group exists.
